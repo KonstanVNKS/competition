@@ -13,11 +13,11 @@ The website will present information about the competition such as participants,
 
 This project is developed by a group of **5 students**:
 
-* David
-* Cerine
-* Yasmina
-* Konstantinos
-* Amal
+* David MUTAKU
+* Cerine KEFSI
+* Yasmina HAFIL
+* Konstantinos VANAKAS
+* Amal ZEMMOURI
 
 Each team member works on their **own Git branch** to avoid conflicts when developing new features.
 
