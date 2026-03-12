@@ -15,7 +15,7 @@ This project is developed by a group of **5 students**:
 
 * HAFIL Yasmina
 * KEFSI Cerine
-* MUTAKU David
+* MUTAKU FWALA David
 * VANAKAS Konstantinos
 * ZEMMOURI Amal
 
