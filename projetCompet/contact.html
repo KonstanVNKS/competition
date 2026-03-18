@@ -1,20 +1,4 @@
 <!DOCTYPE HTML>
-/*
-will contain all the contact info plus a form for any question
-*/
-
-<html>
-<head>
-
-</head>
-<body>
-
-</body>
-<footer>
-</footer>
-</html>
-
-<!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -22,7 +6,7 @@ will contain all the contact info plus a form for any question
 
 	Page Contact – JO 2026
 -->
-<html>
+<html lang="fr">
     <head>
         <title>Contact – JO 2026</title>
         <meta charset="utf-8" />
@@ -112,19 +96,19 @@ will contain all the contact info plus a form for any question
                         <div class="fields">
                             <div class="field half">
                                 <label for="prenom">Prénom</label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" />
+                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required/>
                             </div>
                             <div class="field half">
                                 <label for="nom">Nom</label>
-                                <input type="text" name="nom" id="nom" placeholder="Votre nom" />
+                                <input type="text" name="nom" id="nom" placeholder="Votre nom" required />
                             </div>
                             <div class="field">
                                 <label for="email">Adresse e-mail</label>
-                                <input type="email" name="email" id="email" placeholder="votre@email.com" />
+                                <input type="email" name="email" id="email" placeholder="votre@email.com" required />
                             </div>
                             <div class="field">
                                 <label for="sujet">Sujet</label>
-                                <select name="sujet" id="sujet">
+                                <select name="sujet" id="sujet" required>
                                     <option value="">— Choisissez un sujet —</option>
                                     <option value="billets">Billetterie</option>
                                     <option value="sports">Informations sur les sports</option>
@@ -139,7 +123,7 @@ will contain all the contact info plus a form for any question
                             </div>
                         </div>
                         <ul class="actions special">
-                            <li><input type="submit" value="Envoyer le message" class="button primary" /></li>
+                            <li><button type="submit">Envoyer le message</button></li>
                         </ul>
                     </form>
 
