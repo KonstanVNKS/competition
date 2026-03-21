@@ -1,20 +1,4 @@
 <!DOCTYPE HTML>
-/*
-will contain all the contact info plus a form for any question
-*/
-
-<html>
-<head>
-
-</head>
-<body>
-
-</body>
-<footer>
-</footer>
-</html>
-
-<!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -22,16 +6,16 @@ will contain all the contact info plus a form for any question
 
 	Page Contact – JO 2026
 -->
-<html>
+<html lang="fr">
     <head>
         <title>Contact – JO 2026</title>
         <meta charset="utf-8" />
-        <meta name="author" content="Konstantinos Vanakas"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="assets/css/images/Olympic_rings_without_rims.svg"/>
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
-    <body class="landing is-preload">
+    <body class="is-preload">
 
     <!-- Page Wrapper -->
     <div id="page-wrapper">
@@ -50,16 +34,7 @@ will contain all the contact info plus a form for any question
                                 <li><a href="legalmention.html">Mentions légales</a></li>
                                 <li><a href="supInfo.html">Infos supplementaires</a></li>
                                 <li><a href="eventList.html">Dates et Evenements</a></li>
-                                <li class="submenu">
-                                    <span>Sports</span>
-                                    <ul>
-                                        <li><a href="luge.html">Luge</a></li>
-                                        <li><a href="patinage.html">Patinage artistique</a></li>
-                                        <li><a href="skeleton.html">Skeleton</a></li>
-                                        <li><a href="bobsleigh.html">Bobsleigh</a></li>
-                                        <li><a href="skinordique.html">Ski nordique</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="skinordique.html">Ski Nordique</a></li>
                             </ul>
                         </div>
                     </li>
@@ -122,19 +97,19 @@ will contain all the contact info plus a form for any question
                         <div class="fields">
                             <div class="field half">
                                 <label for="prenom">Prénom</label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" />
+                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required/>
                             </div>
                             <div class="field half">
                                 <label for="nom">Nom</label>
-                                <input type="text" name="nom" id="nom" placeholder="Votre nom" />
+                                <input type="text" name="nom" id="nom" placeholder="Votre nom" required />
                             </div>
                             <div class="field">
                                 <label for="email">Adresse e-mail</label>
-                                <input type="email" name="email" id="email" placeholder="votre@email.com" />
+                                <input type="email" name="email" id="email" placeholder="votre@email.com" required />
                             </div>
                             <div class="field">
                                 <label for="sujet">Sujet</label>
-                                <select name="sujet" id="sujet">
+                                <select name="sujet" id="sujet" required>
                                     <option value="">— Choisissez un sujet —</option>
                                     <option value="billets">Billetterie</option>
                                     <option value="sports">Informations sur les sports</option>
@@ -149,7 +124,7 @@ will contain all the contact info plus a form for any question
                             </div>
                         </div>
                         <ul class="actions special">
-                            <li><input type="submit" value="Envoyer le message" class="button primary" /></li>
+                            <li><button type="submit">Envoyer le message</button></li>
                         </ul>
                     </form>
 
