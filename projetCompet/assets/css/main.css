@@ -3997,3 +3997,23 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+    /* partie css rejoutée par moi pour mes parties */
+
+	.back-link {
+      display: inline-block;
+      margin-bottom: 1em;
+      font-size: 0.9em;
+      opacity: 0.8;
+      text-decoration: none;
+    }
+
+    .features article {
+      border-radius: 8px;
+      padding: 1.5em;
+      background: rgba(255,255,255,0.05);
+      transition: 0.3s;
+    }
+
+    .features article:hover {
+      transform: translateY(-5px);
+    }
