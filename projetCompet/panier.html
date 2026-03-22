@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>Panier - JO 2026</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Votre panier de tickets JO 2026" />
+		<meta name="author" content="Yasmina" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="page-wrapper">
+
+			<header id="header">
+				<h1><a href="index.html">JO 2026</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">Accueil</a></li>
+									<li><a href="skeleton.html">Skeleton</a></li>
+									<li><a href="patinage.html">Patinage artistique</a></li>
+									<li><a href="luge.html">Luge</a></li>
+									<li><a href="bobsleigh.html">Bobsleigh</a></li>
+									<li><a href="ski-nordique.html">Ski nordique</a></li>
+									<li><a href="programme.html">Programme</a></li>
+									<li><a href="billets.html">Billets</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<article id="main">
+
+				<header>
+					<h2>Mon panier</h2>
+					<p>Vérifiez vos tickets avant de confirmer votre commande</p>
+				</header>
+
+				<section class="wrapper style5">
+					<div class="inner">
+
+						<h3>Tickets sélectionnés</h3>
+
+						<table>
+							<thead>
+								<tr>
+									<th>Événement</th>
+									<th>Date</th>
+									<th>Lieu</th>
+									<th>Prix unitaire</th>
+									<th>Quantité</th>
+									<th>Prix total</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Skeleton &mdash; Épreuve Hommes</td>
+									<td>14 février 2026</td>
+									<td>Piste olympique, Milan</td>
+									<td>40 &euro;</td>
+									<td>
+										<form method="get" action="panier.html">
+											<input type="number" name="quantite_skeleton_h" value="2" min="1" max="10" />
+											<input type="submit" value="Mettre à jour" class="button small" />
+										</form>
+									</td>
+									<td>80 &euro;</td>
+									<td><a href="#" class="button small">Supprimer</a></td>
+								</tr>
+								<tr>
+									<td>Skeleton &mdash; Épreuve Femmes</td>
+									<td>15 février 2026</td>
+									<td>Piste olympique, Milan</td>
+									<td>40 &euro;</td>
+									<td>
+										<form method="get" action="panier.html">
+											<input type="number" name="quantite_skeleton_f" value="2" min="1" max="10" />
+											<input type="submit" value="Mettre à jour" class="button small" />
+										</form>
+									</td>
+									<td>80 &euro;</td>
+									<td><a href="#" class="button small">Supprimer</a></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="5"><strong>Total de la commande</strong></td>
+									<td><strong>160 &euro;</strong></td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+
+						<hr />
+
+						<h3>Informations de livraison</h3>
+						<p>Vos tickets vous seront envoyés à l'adresse email associée à votre compte.</p>
+
+						<table>
+							<thead>
+								<tr>
+									<th>Mode de livraison</th>
+									<th>Délai</th>
+									<th>Prix</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>&#9993; Envoi par email</td>
+									<td>Immédiat après confirmation</td>
+									<td>Gratuit</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<hr />
+
+						<h3>Code promotionnel</h3>
+						<form method="get" action="panier.html">
+							<p>
+								<label for="code_promo">Vous avez un code promotionnel ?</label>
+								<input type="text" name="code_promo" id="code_promo" placeholder="Entrez votre code ici" />
+								<input type="submit" value="Appliquer" class="button small" />
+							</p>
+						</form>
+
+						<hr />
+
+						<ul class="actions">
+							<li><a href="confirmation_commande.html" class="button primary">Confirmer ma commande</a></li>
+							<li><a href="billets.html" class="button">Continuer mes achats</a></li>
+						</ul>
+
+					</div>
+				</section>
+
+			</article>
+
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; JO 2026</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+        
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
