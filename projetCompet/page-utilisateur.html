@@ -8,80 +8,118 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
-    <body>
+    <body class="is-preload">
 
-            <div class="profile-card">
-                <h1>Profil de Jean</h1>
-                
-                <div class="photo-container">
-                    <img src="profil.jpg" alt="Photo de profil" id="profile-pic">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">JO 2026</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                                <li><a href="bobsleigh.html">Bobsleigh</a></li>
+                                <li><a href="programme.html">Programme</a></li>
+                                <li><a href="billeterie.html">Billetterie</a></li>
+                                <li><a href="a_propos.html">À propos</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="login.html">Connexion</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <article id="main">
+            <header>
+                <h2>Mon compte</h2>
+                <p>Consultez vos informations, vos réservations et vos paramètres</p>
+            </header>
+
+            <!-- Présentation -->
+			<section class="wrapper style5">
+                <div class="profile-card">
+                    <h3>Profil de Jean</h3>
+                    
+                    <div class="photo-container">
+                        <img src="profil.jpg" alt="Photo de profil" id="profile-pic">
+                    </div>
+
+                    <form>
+                        <div class="input-group">
+                            <label>Nom :</label>
+                            <input type="text" value="DUPONT">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Prénom :</label>
+                            <input type="text" value="Jean">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Âge :</label>
+                            <input type="number" value="30">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Date de naissance :</label>
+                            <input type="date" value="1995-10-27">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Adresse :</label>
+                            <input type="text" value="Rue des tulipes">
+                        </div>
+
+                        <div class="input-group">
+                            <label> Numéro </label>
+                            <input type="text" value="12">
+                        </div>
+
+                        
+                        <div class="input-group">
+                            <label> Code postale </label>
+                            <input type="text" value="1000">
+                        </div>
+
+                        
+                        <div class="input-group">
+                            <label> Ville </label>
+                            <input type="text" value="Bruxelles">
+                        </div>
+
+                        
+                        <div class="input-group">
+                            <label> Pays </label>
+                            <input type="text" value="Belgique">
+                        </div>
+
+
+
+                        <div class="input-group">
+                            <label>Sport favori :</label>
+                            <select>
+                                <option>Luge</option>
+                                <option>Patinage artistique</option>
+                                <option>Bobsleigh</option>
+                                <option>Ski nordique</option>
+                                <option>Skeleton</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Enregistrer le profil</button>
+                    </form>
                 </div>
+            </section>
+        </article>  
 
-                <form>
-                    <div class="input-group">
-                        <label>Nom :</label>
-                        <input type="text" value="DUPONT" >
-                    </div>
-
-                    <div class="input-group">
-                        <label>Prénom :</label>
-                        <input type="text" value="Jean">
-                    </div>
-
-                    <div class="input-group">
-                        <label>Âge :</label>
-                        <input type="number" value="30">
-                    </div>
-
-                    <div class="input-group">
-                        <label>Date de naissance :</label>
-                        <input type="date" value=" 1995-10-27">
-                    </div>
-
-                    <div class="input-groupe">
-                        <label>Adresse :</label>
-                        <input type="texte" value="Rue des tulipes">
-                    </div>
-
-                    <div class="input-groupe">
-                        <label> Numéro </label>
-                        <input type="texte" value="12">
-                    </div>
-
-                    
-                    <div class="input-groupe">
-                        <label> Code postale </label>
-                        <input type="texte" value="1000">
-                    </div>
-
-                    
-                    <div class="input-groupe">
-                        <label> Ville </label>
-                        <input type="texte" value="Bruxelles">
-                    </div>
-
-                    
-                    <div class="input-groupe">
-                        <label> Pays </label>
-                        <input type="texte" value="Belgique">
-                    </div>
-
-
-
-                    <div class="input-group">
-                        <label>Sport favori :</label>
-                        <select>
-                            <option>Luge</option>
-                            <option>Patinage artistique</option>
-                            <option>Bobsleigh</option>
-                            <option>Ski nordique</option>
-                            <option>Skeleton</option>
-                        </select>
-                    </div>
-
-                    <button type="submit">Enregistrer le profil</button>
-                </form>
-            </div>
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
@@ -94,7 +132,7 @@
                 <li>&copy; JO 2026</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </footer>
-        </div>
+
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
