@@ -15,19 +15,39 @@
 		<link rel="stylesheet" href="assets/css/main.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 	</head>
-	<body class="landing is-preload">
+	<body class="login-page is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
+					<!-- Header -->
+					<header id="header">
 						<h1>
 							<a href="index.html">
-								<span>Titre</span>
+								<span>JO</span>
 								<img src="images/olympic-rings-white-md.png" alt="logo JO">
 							</a>
             </h1>
+						<nav id="nav-desktop">
+							<ul class="menu-horizontal">
+									<li><a href="index.html">Accueil</a></li>
+									<li class="dropdown">
+												<a href="#">Sports</a>
+											<ul class="dropdown-menu">
+													<li><a href="skeleton.html">Skeleton</a></li>
+													<li><a href="patinage.html">Patinage artistique</a></li>
+													<li><a href="luge.html">Luge</a></li>
+													<li><a href="bobsleigh.html">Bobsleigh</a></li>
+													<li><a href="skinordique.html">Ski nordique</a></li>
+											</ul>
+									</li>
+									<li><a href="programme.html">Programme</a></li>
+									<li><a href="billetterie.html">Tickets</a></li>
+									<li><a href="page-utilisateur.html">Page utilisateur</a></li>
+									<li><a href="supInfo.html">Infos</a></li>
+									<li><a href="contact.html">Contact</a></li>
+							</ul>
+            </nav>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -35,37 +55,23 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Accueil</a></li>
-											<li class="submenu">
-												<a href="#">Sports</a>
-												<ul>
-													<li><a href="luge.html">Luge</a></li>
-													<li><a href="patinage.html">Patinage artistique</a></li>
-													<li><a href="skeleton.html">Skeleton</a></li>
-													<li><a href="bobsleigh.html">Bobsleigh</a></li>
-													<li><a href="skinordique.html">Ski nordique</a></li>
-												</ul>
-											</li>
+																				<li>
+																						<h2 class="submenu">Sports</h2>
+																						<ul  class="submenu">
+																								<li><a href="skeleton.html">Skeleton</a></li>
+																								<li><a href="patinage.html">Patinage artistique</a></li>
+																								<li><a href="luge.html">Luge</a></li>
+																								<li><a href="bobsleigh.html">Bobsleigh</a></li>
+																								<li><a href="skinordique.html">Ski nordique</a></li>
+																						</ul>     
+																				</li>
 											<li><a href="programme.html">Programme</a></li>
-											<li class="submenu">
-			                  <a href="billetterie.html">Billetterie</a>
-												<ul>
-													<li><a href="">Liste des évènements</a></li>
-													<li><a href="">Panier</a></li>
-													<li><a href="">Statut des commandes</a></li>
-												</ul>
-											</li>
-											<li><a href="informations.utiles.html">Informations utiles</a></li>
-											<li><a href="#">Service client</a></li>
-											<li><a href="#">Mon Compte</a></li>
-											<li class="submenu">
-												<a href="login.html">Connexion</a>
-												<ul>
-													<li><a href="">Utilisateur</a></li>
-													<li><a href="">Historique des commandes</a></li>
-												</ul>
-											</li>
-											<li><a href="apropos.html">A propos</a></li>
-											<li><a href="legalmention.html">Mentions légales</a></li>
+											<li><a href="billetterie.html">Tickets</a></li>
+																				<li><a href="page-utilisateur.html">Page utilisateur</a></li>
+																				<li><a href="supInfo.html">Infos supplementaires</a></li>
+																				<li><a href="contact.html">Contact</a></li>
+																				<li><a href="a_propos">A propos</a></li>
+																				<li><a href="legalmention.html">Mentions légales</a></li>
 										</ul>
 									</div>
 								</li>
@@ -81,7 +87,7 @@
 
           <!-- Login -->
 						<section class="wrapper style5">
-							<h2>Connexion</h2>
+							<h3>Connexion</h3>
 							<div class="row gtr-uniform">
 								<form method="post" action="#" id="form-login">
 									<fieldset>
@@ -108,7 +114,7 @@
 
 					<!-- Sign in -->
 						<section class="wrapper style5">
-							<h2>Création du compte</h2>
+							<h3>Création du compte</h3>
 							<div class="row gtr-uniform">
 								<form method="post" action="#" id="form-signin">
 									<fieldset>
