@@ -3814,10 +3814,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/JO2026banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/JO2026banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/JO2026banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/JO2026banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3964,10 +3964,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3985,10 +3985,10 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/apropos.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4018,7 +4018,7 @@ input, select, textarea {
       transform: translateY(-5px);
     }
 
-	/* partis ppour lees images de fond*/
+	/* partis our les images de fond*/
 	body.skinordic-page #main > header {
 		background-image: url("../../images/aaron-doucett-1OlkL41t3ns-unsplash.jpg");
 		background-size: cover;
@@ -4207,37 +4207,128 @@ input, select, textarea {
 		display: block;
 	}
 
-	/* Note technique */
-	.info-note {
-		border-left: solid 4px rgba(255,255,255,0.35);
-		font-style: italic;
-		margin: 0.5em 0 0;
-		padding: 0.5em 0 0.5em 1.8em;
-		font-size: 0.8em;
-		color: rgba(255,255,255,0.6);
-		line-height: 1.75em;
-	}
-	.info-note strong { color: #fff; font-style: normal; }
-	.info-note code {
-		background: rgba(255,255,255,0.1);
-		font-size: 0.88em;
-		padding: 0.1em 0.4em;
-		border-radius: 3px;
-		font-style: normal;
-		letter-spacing: 0;
-	}
-
 
 	.submenu{
 		margin : 0px;
 		font-weight: normal
 	}
-
+		/*  CSS pour le logo de retour à l'acceuille*/
 	#header h1 span{
 		display: none;
 	}
-	#header h1 a img{
-		width: 85px;
-		height: 46px;
-		padding-top: 15px;
+	#header h1 a img {
+    width: 100%;
+    max-width: 85px;
+    height: auto;
+    padding-top:0.5em;
+	}
+
+	/* =========================
+   THEME HIVERNAL OVERRIDE
+   ========================= */
+
+	:root {
+		--bg-main: #1C2A39;
+		--bg-secondary: #2E4A62;
+		--bg-light: #E5EAF0;
+	
+		--text-main: #5396e7;
+		--text-dark: #1C2A39;
+	
+		--accent: #3B82F6;
+		--accent-light: #38BDF8;
+	
+		--border: rgba(255,255,255,0.15);
+	}
+	
+	/* Fond global */
+	body {
+		background: var(--bg-main) !important;
+		color: var(--text-main) !important;
+	}
+	
+	/* Sections */
+	.wrapper.style1 {
+		background: var(--bg-main) !important;
+	}
+	
+	.wrapper.style2 {
+		background: var(--bg-secondary) !important;
+	}
+	
+	.wrapper.style3 {
+		background: var(--accent) !important;
+	}
+	
+	/* Header */
+	#header {
+		background: var(--bg-main) !important;
+	}
+	
+	/* Menu hamburger */
+	#menu {
+		background: var(--bg-main) !important;
+	}
+	
+	/* Texte */
+	p, h1, h2, h3, h4, h5, h6 {
+		color: var(--text-main);
+	}
+	
+	/* Liens */
+	a {
+		color: var(--accent);
+	}
+	
+	a:hover {
+		color: var(--accent-light);
+	}
+	
+	/* Boutons */
+	.button.primary {
+		background-color: var(--accent);
+		color: #fff !important;
+	}
+	
+	.button.primary:hover {
+		background-color: var(--accent-light);
+	}
+	
+	/* Bordures */
+	hr {
+		border-color: var(--border);
+	}
+	
+	/* Tables */
+	table {
+		color: var(--text-main);
+	}
+	
+	table thead {
+		border-bottom: solid 2px var(--border);
+	}
+	
+	table tbody tr {
+		border-bottom: solid 1px var(--border);
+	}
+	
+	/* Cartes / features */
+	.features article {
+		background: rgba(255,255,255,0.05);
+		border-radius: 8px;
+	}
+	
+	/* Menu texte */
+	#menu ul > li > a {
+		color: var(--text-main);
+	}
+	
+	/* Sous-menu */
+	#menu .submenu ul li a {
+		opacity: 0.85;
+	}
+	
+	/* Hover global plus lisible */
+	a:hover, .button:hover {
+		transition: 0.3s;
 	}
