@@ -4024,3 +4024,13 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center;
 	}
+
+	/* logo des jeux */
+	#header h1 span{
+		display: none;
+	}
+	#header h1 a img{
+		width: 85px;
+		height: 46px;
+		padding-top: 15px;
+	}
