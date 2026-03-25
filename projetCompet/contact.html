@@ -28,9 +28,11 @@
                         <img src="images/olympic-rings-white-md.png" alt="logo JO">
                     </a>
                 </h1>
-                <nav id="nav-desktop">
+                    <nav id="nav-desktop">
                     <ul class="menu-horizontal">
                         <li><a href="index.html">Accueil</a></li>
+                        <li><a href="login.html">Se connecter</a></li>
+                        <li><a href="panier.html">Panier</a></li>
 
                         <li class="dropdown">
                              <a href="#">Sports</a>
@@ -44,39 +46,50 @@
                         </li>
 
                         <li><a href="programme.html">Programme</a></li>
-                        <li><a href="billetterie.html">Tickets</a></li>
-                        <li><a href="page-utilisateur.html">Page utilisateur</a></li>
+                        <li><a href="billetterie.html">Billets</a></li>
+                        <li><a href="page-utilisateur.html">Profil</a></li>
                         <li><a href="supInfo.html">Infos</a></li>
+                        <li><a href="a_propros.html">A propros</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="legalmention.html">Mentions légales</a></li>
                     </ul>
+                </nav>
+                <!--Menu Hamburger Mobile-->
 				<nav id="nav">
 					<ul>
 						<li class="special">
 							<a href="#menu" class="menuToggle"><span>Menu</span></a>
 							<div id="menu">
-								<ul>
-									<li><a href="index.html">Accueil</a></li>
-									<li><a href="skeleton.html">Skeleton</a></li>
-									<li><a href="patinage.html">Patinage artistique</a></li>
-									<li><a href="luge.html">Luge</a></li>
-									<li><a href="bobsleigh.html">Bobsleigh</a></li>
-									<li><a href="skinordique.html">Ski nordique</a></li>
-									<li><a href="programme.html">Programme</a></li>
-									<li><a href="billetterie.html">Tickets</a></li>
-                                    <li><a href="page-utilisateur.html">Page utilisateur</a></li>
-                                    <li><a href="supInfo.html">Infos supplementaires</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="a_propos">A propos</a></li>
-                                    <li><a href="legalmention.html">Mentions légales</a></li>
-                        
+                                <ul>
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="login.html">Se connecter</a></li>
+                                    <li><a href="panier.html">Panier</a></li>
 
-								</ul>
+                                    <li class="submenu">
+                                        <p class="submenu">Sports</p>
+                                        <ul>
+                                            <li><a href="skeleton.html">Skeleton</a></li>
+                                            <li><a href="patinage.html">Patinage artistique</a></li>
+                                            <li><a href="luge.html">Luge</a></li>
+                                            <li><a href="bobsleigh.html">Bobsleigh</a></li>
+                                            <li><a href="skinordique.html">Ski nordique</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="programme.html">Programme</a></li>
+                                    <li><a href="billetterie.html">Billets</a></li>
+                                    <li><a href="page-utilisateur.html">Profil</a></li>
+                                    <li><a href="supInfo.html">Infos</a></li>
+                                    <li><a href="a_propros.html">A propros</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="legalmention.html">Mentions légales</a></li>
+                                </ul>
 							</div>
 						</li>
 					</ul>
 				</nav>
-			</header>
-        <!-- Main -->
+			</header>			
+
         <article id="main">
             <header>
                 <h2>Contact &amp; FAQ</h2>
@@ -131,15 +144,15 @@
                         <fieldset class="fields">
                             <div class="field half">
                                 <label for="prenom">Prénom</label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+                                <input type="text" name="prenom" id="prenom" value="prenom" placeholder="Votre prénom" required>
                             </div>
                             <div class="field half">
                                 <label for="nom">Nom</label>
-                                <input type="text" name="nom" id="nom" placeholder="Votre nom" required >
+                                <input type="text" name="nom" id="nom" value="nom" placeholder="Votre nom" required >
                             </div>
                             <div class="field">
                                 <label for="email">Adresse e-mail</label>
-                                <input type="email" name="email" id="email" placeholder="votre@email.com" required >
+                                <input type="email" name="email" id="email" value="email" placeholder="votre@email.com" required >
                             </div>
                             <div class="field">
                                 <label for="sujet">Sujet</label>
