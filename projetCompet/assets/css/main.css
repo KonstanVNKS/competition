@@ -4367,7 +4367,7 @@ input, select, textarea {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #222;
+    background: var(--bg-main);
     list-style: none;
     padding: 10px 0;
     display: none;
