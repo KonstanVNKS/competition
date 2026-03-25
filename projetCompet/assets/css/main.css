@@ -4226,3 +4226,18 @@ input, select, textarea {
 		font-style: normal;
 		letter-spacing: 0;
 	}
+
+
+	.submenu{
+		margin : 0px;
+		font-weight: normal
+	}
+
+	#header h1 span{
+		display: none;
+	}
+	#header h1 a img{
+		width: 85px;
+		height: 46px;
+		padding-top: 15px;
+	}
