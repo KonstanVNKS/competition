@@ -4332,3 +4332,86 @@ input, select, textarea {
 	a:hover, .button:hover {
 		transition: 0.3s;
 	}
+	#header h1 a img{
+		width: 85px;
+		height: 46px;
+		padding-top: 15px;
+	}
+
+	/* MENU DESKTOP */
+#nav-desktop {
+    display: none;
+}
+
+.menu-horizontal {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-horizontal li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu-horizontal a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    min-width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+    #nav-desktop {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #nav-desktop {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+}
+
+/* HEADER FIXE */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Évite que le contenu soit caché */
+#page-wrapper {
+    padding-top: 100px;
+}
