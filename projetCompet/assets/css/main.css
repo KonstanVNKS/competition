@@ -4017,3 +4017,10 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center;
 	}
+
+	/* Banner spécifique Billetterie */
+	body.billetterie-page #main > header {
+		background-image: url("../../images/billetterie.jpg");
+		background-size: cover;
+		background-position: center;
+	}
