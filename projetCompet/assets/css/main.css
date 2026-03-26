@@ -3508,7 +3508,7 @@ input, select, textarea {
 						display: block;
 						font-size: 0.8em;
 						letter-spacing: 0.225em;
-						padding: 0 1.5em;
+						padding: 0 5px;
 						text-transform: uppercase;
 					}
 
@@ -4039,44 +4039,33 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center;
 	}
-	
-	/* css page supInfo */
 	/* ── Bannière interne (cohérente avec #main > header du thème) */
 	.supinfo-banner {
-	padding: 12em 0 10em;
-	background-image:
-		linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-		url("../../images/apropos.jpg");
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
+		padding: 6em 0 5em;
+		background-image:
+			linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+			url("images/apropos.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
 	}
 	.supinfo-banner h2 {
 		font-size: 1.75em;
 		margin: 0 0 0.5em;
 	}
 	.supinfo-banner p {
-		color:  var(--bg-light);
+		color: inherit;
 		letter-spacing: 0.225em;
 		text-transform: uppercase;
 		margin: 0;
 	}
-
-	@media screen and (max-width: 1680px) {
-		.supinfo-banner { padding: 10em 0 8em; }
-	}
-	@media screen and (max-width: 1280px) {
-		.supinfo-banner { padding: 8em 3em 6em; }
-	}
-	@media screen and (max-width: 980px) {
-		.supinfo-banner { padding: 10em 3em 8em; }
-	}
 	@media screen and (max-width: 736px) {
-		.supinfo-banner { padding: 5em 3em 3em; background-attachment: scroll; }
-		.supinfo-banner h2 { font-size: 1.25em; margin: 0 0 1em; }
+		.supinfo-banner { padding: 4em 2em 3em; background-attachment: scroll; }
+		.supinfo-banner h2 { font-size: 1.25em; }
 	}
+
 	/* ── Grille 2 colonnes pour les cartes transport ── */
 	.transport-grid {
 		display: grid;
@@ -4311,7 +4300,18 @@ input, select, textarea {
 	}
 	
 	.button.primary:hover {
-		background-color: var(--accent-light);
+		background-color: var(--accent-light) !important;
+		color: #fff !important;
+	}
+
+	.button {
+		background-color: var( --button) !important;
+		color : #fff !important;
+	}
+
+	.button:hover {
+		background-color: var(--button-light) !important;
+		color : #000 !important;
 	}
 	
 	/* Bordures */
