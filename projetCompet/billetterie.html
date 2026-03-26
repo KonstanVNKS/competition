@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>JO 2026</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="David Mutaku Fwala">
+		<link rel="stylesheet" href="assets/css/main.css">
+        <link rel="icon" type="image/png" href="images/olympic-games.png"> 
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+	</head>
+
+	<body class="billetterie-page is-preload">
+
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <span>JO 2026</span>
+                        <img src="images/olympic-rings-white-md.png" alt="logo JO">
+                    </a>
+                </h1>
+                <nav id="nav-desktop">
+                    <ul class="menu-horizontal">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="login.html">Se connecter</a></li>
+                        <li><a href="panier.html">Panier</a></li>
+
+                        <li class="dropdown">
+                             <a href="#">Sports</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="skeleton.html">Skeleton</a></li>
+                                <li><a href="patinage.html">Patinage artistique</a></li>
+                                <li><a href="luge.html">Luge</a></li>
+                                <li><a href="bobsleigh.html">Bobsleigh</a></li>
+                                <li><a href="skinordique.html">Ski nordique</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="billetterie.html">Tickets</a></li>
+                        <li><a href="page-utilisateur.html">Page utilisateur</a></li>
+                        <li><a href="historique-commandes.html">Historique Commandes</a></li>
+                        <li><a href="supInfo.html">Infos</a></li>
+                        <li><a href="a_propros.html">A propros</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="legalmention.html">Mentions légales</a></li>
+                    </ul>
+                </nav>
+                <!--Menu Hamburger Mobile-->
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="login.html">Se connecter</a></li>
+                                    <li><a href="panier.html">Panier</a></li>
+
+                                    <li class="submenu">
+                                        <p class="submenu">Sports</p>
+                                        <ul>
+                                            <li><a href="skeleton.html">Skeleton</a></li>
+                                            <li><a href="patinage.html">Patinage artistique</a></li>
+                                            <li><a href="luge.html">Luge</a></li>
+                                            <li><a href="bobsleigh.html">Bobsleigh</a></li>
+                                            <li><a href="skinordique.html">Ski nordique</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="programme.html">Programme</a></li>
+                                    <li><a href="billetterie.html">Billets</a></li>
+                                    <li><a href="page-utilisateur.html">Profil</a></li>
+                                    <li><a href="historique-commandes.html">Historique Commandes</a></li>
+                                    <li><a href="supInfo.html">Infos</a></li>
+                                    <li><a href="a_propros.html">A propros</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="legalmention.html">Mentions légales</a></li>
+                                </ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+            </header>
+
+            <!-- Main -->
+            <article id="main">
+                <header>
+                    <h2>Billetterie</h2>
+                    <p>Réservez vos places pour les Jeux Olympiques d’hiver 2026</p>
+                </header>
+
+                <section class="wrapper style5">
+                    <div class="inner">
+
+                        <!-- Intro -->
+                        <div>
+                            <h3>Choisissez votre événement</h3>
+                            <p>
+                                Sélectionnez un sport, une date et réservez vos billets pour vivre
+                                l’expérience unique des Jeux Olympiques d’hiver 2026.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <!-- Tableau billets -->
+                        <div>
+                            <h3>Billets disponibles</h3>
+                            
+                            <p id="panier-message" style="display: none;"></p>
+
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Sport</th>
+                                            <th>Date</th>
+                                            <th>Lieu</th>
+                                            <th>Prix</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-sport="Bobsleigh" data-date="15 février 2026" data-lieu="Cortina" data-prix="120">
+                                            <td>Bobsleigh</td>
+                                            <td>15 février 2026</td>
+                                            <td>Cortina</td>
+                                            <td>120€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-sport="Luge" data-date="8 février 2026" data-lieu="Cortina" data-prix="60">
+                                            <td>Luge</td>
+                                            <td>8 février 2026</td>
+                                            <td>Cortina</td>
+                                            <td>60€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-sport="Skeleton" data-date="13 février 2026" data-lieu="Cortina" data-prix="100">
+                                            <td>Skeleton</td>
+                                            <td>13 février 2026</td>
+                                            <td>Cortina</td>
+                                            <td>100€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-sport="Patinage artistique" data-date="10 février 2026" data-lieu="Milan" data-prix="150">
+                                            <td>Patinage artistique</td>
+                                            <td>10 février 2026</td>
+                                            <td>Milan</td>
+                                            <td>150€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-sport="Ski de fond" data-date="18 février 2026" data-lieu="Alpes" data-prix="80">
+                                            <td>Ski de fond</td>
+                                            <td>18 février 2026</td>
+                                            <td>Alpes</td>
+                                            <td>80€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div>
+							<ul class="actions">
+								<li><a href="programme.html" class="button primary">Voir le programme</a></li>
+								<li><a href="index.html" class="button">Retour à l'accueil</a></li>
+							</ul>
+						</div>
+                    </div>
+                </section>
+            </article>
+
+			<!--Footer-->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/OlimpiadiMilanoCortina2026" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/milanocortina2026/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/KonstanVNKS/competition" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2026 Milano Cortina</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const messagePanier = document.getElementById("panier-message");
+            const lignes = document.querySelectorAll("tbody tr");
+        
+            function getPanier() {
+                return JSON.parse(localStorage.getItem("panier")) || [];
+            }
+        
+            function savePanier(panier) {
+                localStorage.setItem("panier", JSON.stringify(panier));
+            }
+        
+            function getKey(item) {
+                return `${item.sport}|${item.date}|${item.lieu}`;
+            }
+        
+            function updateMessageGlobal() {
+                const panier = getPanier();
+                const totalArticles = panier.reduce((total, item) => total + item.quantite, 0);
+        
+                if (totalArticles > 0) {
+                    messagePanier.style.display = "block";
+                    messagePanier.innerHTML = `
+                        <strong>${totalArticles} article(s) sélectionné(s)</strong><br>
+                        <a href="panier.html" class="button small primary" style="margin-top:10px;">Aller au panier</a>
+                    `;
+                } else {
+                    messagePanier.style.display = "none";
+                    messagePanier.innerHTML = "";
+                }
+            }
+        
+            function syncLigneAvecPanier(ligne) {
+                const reserverBtn = ligne.querySelector(".reserver-btn");
+                const controls = ligne.querySelector(".quantite-controls");
+                const quantiteSpan = ligne.querySelector(".quantite");
+        
+                const item = {
+                    sport: ligne.dataset.sport,
+                    date: ligne.dataset.date,
+                    lieu: ligne.dataset.lieu,
+                    prix: parseFloat(ligne.dataset.prix)
+                };
+        
+                const panier = getPanier();
+                const key = getKey(item);
+                const existe = panier.find(p => getKey(p) === key);
+        
+                if (existe && existe.quantite > 0) {
+                    reserverBtn.style.display = "none";
+                    controls.style.display = "inline-flex";
+                    quantiteSpan.textContent = existe.quantite;
+                } else {
+                    reserverBtn.style.display = "inline-block";
+                    controls.style.display = "none";
+                    quantiteSpan.textContent = "1";
+                }
+            }
+        
+            lignes.forEach(ligne => {
+                const reserverBtn = ligne.querySelector(".reserver-btn");
+                const controls = ligne.querySelector(".quantite-controls");
+                const plus = ligne.querySelector(".plus");
+                const moins = ligne.querySelector(".moins");
+                const quantiteSpan = ligne.querySelector(".quantite");
+        
+                const itemBase = {
+                    sport: ligne.dataset.sport,
+                    date: ligne.dataset.date,
+                    lieu: ligne.dataset.lieu,
+                    prix: parseFloat(ligne.dataset.prix)
+                };
+        
+                reserverBtn.addEventListener("click", function () {
+                    let panier = getPanier();
+                    const key = getKey(itemBase);
+                    const index = panier.findIndex(item => getKey(item) === key);
+        
+                    if (index === -1) {
+                        panier.push({ ...itemBase, quantite: 1 });
+                    } else {
+                        panier[index].quantite = 1;
+                    }
+        
+                    savePanier(panier);
+                    syncLigneAvecPanier(ligne);
+                    updateMessageGlobal();
+                });
+        
+                plus.addEventListener("click", function () {
+                    let panier = getPanier();
+                    const key = getKey(itemBase);
+                    const index = panier.findIndex(item => getKey(item) === key);
+        
+                    if (index === -1) {
+                        panier.push({ ...itemBase, quantite: 1 });
+                    } else {
+                        panier[index].quantite += 1;
+                    }
+        
+                    savePanier(panier);
+                    syncLigneAvecPanier(ligne);
+                    updateMessageGlobal();
+                });
+        
+                moins.addEventListener("click", function () {
+                    let panier = getPanier();
+                    const key = getKey(itemBase);
+                    const index = panier.findIndex(item => getKey(item) === key);
+        
+                    if (index !== -1) {
+                        if (panier[index].quantite > 1) {
+                            panier[index].quantite -= 1;
+                        } else {
+                            panier.splice(index, 1);
+                        }
+                    }
+        
+                    savePanier(panier);
+                    syncLigneAvecPanier(ligne);
+                    updateMessageGlobal();
+                });
+        
+                syncLigneAvecPanier(ligne);
+            });
+        
+            updateMessageGlobal();
+        });
+        </script>
+
+	</body>
+</html>
