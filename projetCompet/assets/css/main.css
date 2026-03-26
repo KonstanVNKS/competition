@@ -4039,6 +4039,34 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center;
 	}
+	/*Poour la bannier des pages de David*/
+	/* Banner spécifique Bobsleigh */
+	body.bobsleigh-page #main > header {
+		background-image: url("../../images/canada-bobsleigh.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Banner spécifique Programme */
+	body.programme-page #main > header {
+		background-image: url("../../images/programme.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Banner spécifique A propos */
+	body.a_propos-page #main > header {
+		background-image: url("../../images/apropos.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Banner spécifique Billetterie */
+	body.billetterie-page #main > header {
+		background-image: url("../../images/billetterie.jpg");
+		background-size: cover;
+		background-position: center;
+	}
 	/* ── Bannière interne (cohérente avec #main > header du thème) */
 	.supinfo-banner {
 		padding: 6em 0 5em;
@@ -4446,30 +4474,3 @@ img {
 	aspect-ratio: 16/9;
   }
 
-/* Banner spécifique Bobsleigh */
-body.bobsleigh-page #main > header {
-	background-image: url("../../images/canada-bobsleigh.jpg");
-	background-size: cover;
-	background-position: center;
-}
-
-/* Banner spécifique Programme */
-body.programme-page #main > header {
-	background-image: url("../../images/programme.jpg");
-	background-size: cover;
-	background-position: center;
-}
-
-/* Banner spécifique A propos */
-body.a_propos-page #main > header {
-	background-image: url("../../images/apropos.jpg");
-	background-size: cover;
-	background-position: center;
-}
-
-/* Banner spécifique Billetterie */
-body.billetterie-page #main > header {
-	background-image: url("../../images/billetterie.jpg");
-	background-size: cover;
-	background-position: center;
-}
