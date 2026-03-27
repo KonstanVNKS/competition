@@ -4020,7 +4020,7 @@ input, select, textarea {
 
     /* partis our les images de fond*/
     body.skinordic-page #main > header {
-        background-image: url("../../images/aaron-doucett-1OlkL41t3ns-unsplash.jpg");
+        background-image: url("../../images/aaron-doucett-1OlkL41t3ns-unsplash.jpg") !important;
         background-size: cover;
         background-position: center;
     }
@@ -4067,18 +4067,12 @@ input, select, textarea {
         background-size: cover;
         background-position: center;
     }
-    /* Banner spécifique Accueil */
-    body.accueilpage #main > header {
-        background-image: url("../../images/index-banner.jpg");
-        background-size: cover;
-        background-position: center;
-    }
+    
+    
     /* ── Bannière interne (cohérente avec #main > header du thème) */
     .supinfo-banner {
         padding: 6em 0 5em;
-        background-image:
-            linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-            url("images/apropos.jpg");
+        background-image:url("images/apropos.jpg");
         background-attachment: fixed;
         background-position: center center;
         background-repeat: no-repeat;
@@ -4246,7 +4240,7 @@ input, select, textarea {
         margin : 0px;
         font-weight: normal
     }
-        /*  CSS pour le logo de retour à l'acceuille*/
+        /*  CSS pour le logo de retour à l'accueil*/
     #header h1 span{
         display: none;
     }
@@ -4257,9 +4251,6 @@ input, select, textarea {
     padding-top:0.5em;
     }
 
-    #header ul.submenu span {
-        
-    }
 
     /* =========================
    THEME HIVERNAL OVERRIDE
@@ -4829,4 +4820,33 @@ body.login .wrapper.style5 .inner section h3 {
 	body.login #form-signin fieldset {
 		padding: 1.5em;
 	}
+}
+
+/* Photo de fond banner — accueil uniquement */
+body.accueilpage #banner {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+		background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.is-mobile.accueilpage #banner,
+body.is-mobile.accueilpage .wrapper.style4 {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+}
+
+body.accueilpage #cta {
+    background-image: none;
+    background-color: transparent;
+}
+
+#header > nav > ul > li > span.submenu-name{
+    border: 0;
+    color: #fff;
+    display: block;
+    font-size: 0.8em;
+    font-style: bold;
+    letter-spacing: 0.225em;
+    padding: 0 5px;
+    text-transform: uppercase;
 }
