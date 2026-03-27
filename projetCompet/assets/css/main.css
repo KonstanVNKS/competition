@@ -4067,6 +4067,12 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center;
 	}
+	/* Banner spécifique Billetterie */
+	body.accueil-page #main > header {
+		background-image: url("../../images/index-banner.jpg");
+		background-size: cover;
+		background-position: center;
+	}
 	/* ── Bannière interne (cohérente avec #main > header du thème) */
 	.supinfo-banner {
 		padding: 6em 0 5em;

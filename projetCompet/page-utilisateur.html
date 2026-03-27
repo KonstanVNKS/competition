@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Page Utilisateur – JO 2026</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+        <meta name="author" content="Amal Zemmouri">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="icon" type="image/png" href="images/olympic-games.png"> 
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>
+                <a href="index.html">
+                    <span>JO 2026</span>
+                    <img src="images/olympic-rings-white-md.png" alt="logo JO">
+                </a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="generic.html">Generic</a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                                <li><a href="luge.html">Luge</a></li>
+                                <li><a href="historique-commandes.html">Historique de commandes</a></li>
+                                <li><a href="page-utilisateur.html">Profil</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <article id="main">
+            <header>
+                <h2>Mon profil</h2>
+                <p>Consultez vos informations, vos réservations et vos paramètres</p>
+            </header>
+
+            <!-- Présentation -->
+			<section class="wrapper style5">
+                <div class="inner" >
+                    <div class="profile-card">
+                        <h3>Profil de Jean</h3>
+                        
+                        <div class="photo de profil">
+                            <img src="images/profil.jpg" alt="Photo de profil" width="150"> 
+                        </div>
+
+                        <form method="post" id="formulaire-utilisateur">
+                            <fieldset>
+                                <div class="input-group">
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" value="DUPONT" id="nom" name="nom">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="prenom">Prénom :</label>
+                                    <input type="text" value="Jean" id="prenom" name="prenom">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="email">Adresse mail:</label>
+                                    <input type="text" value="Dupont.jean@hotmail.com" id="email" name="email">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="age">Âge :</label>
+                                    <input type="number" value="30" id="age" name="age" placeholder="Votre âge">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="date">Date de naissance :</label>
+                                    <input type="date" value="1995-10-27" name="date" id="date">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="adresse">Adresse :</label>
+                                    <input type="text" value="Rue des tulipes" name="adresse" id="adresse">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="numero"> Numéro </label>
+                                    <input type="text" value="12" name="numero" id="numero">
+                                </div>
+
+                                
+                                <div class="input-group">
+                                    <label for="codepostal"> Code postale </label>
+                                    <input type="text" value="1000" id="codepostal" name="code-postal">
+                                </div>
+
+                                
+                                <div class="input-group">
+                                    <label> Ville </label>
+                                    <input type="text" value="Bruxelles">
+                                </div>
+
+                                
+                                <div class="input-group">
+                                    <label> Pays </label>
+                                    <input type="text" value="Belgique">
+                                </div>
+
+
+
+                                <div class="input-group">
+                                    <label for="sport">Sport favori :</label>
+                                    <select name="sport" id="sport">
+                                        <option value="">-Selectionez un sport</option>
+                                        <option value="luge">Luge</option>
+                                        <option value="patinage">Patinage artistique</option>
+                                        <option value="bobsleigh">Bobsleigh</option>
+                                        <option value="skinordique">Ski nordique</option>
+                                        <option value="skeleton">Skeleton</option>
+                                    </select>
+                                </div>
+                                <ul>
+                                    <li><button class="primary button" type="submit" form="formulaire-utilisateur" formmethod="post">Enregistrer le profil</button></li>
+                                </ul>
+                               
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </article>  
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/OlimpiadiMilanoCortina2026" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/milanocortina2026/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/KonstanVNKS/competition" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2026 Milano Cortina</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
