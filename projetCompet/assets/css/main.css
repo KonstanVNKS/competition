@@ -4428,3 +4428,22 @@ body.login .wrapper.style5 .inner section h3 {
 		padding: 1.5em;
 	}
 }
+
+
+/* Photo de fond banner — accueil uniquement */
+body.accueilpage #banner {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+		background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.is-mobile.accueilpage #banner,
+body.is-mobile.accueilpage .wrapper.style4 {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+}
+
+body.accueilpage #cta {
+    background-image: none;
+    background-color: transparent;
+}
