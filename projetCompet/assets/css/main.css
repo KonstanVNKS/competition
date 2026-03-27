@@ -3964,10 +3964,10 @@ body.is-mobile #main > header {
 /* Landing */
 
 body.landing #page-wrapper {
-	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
+	background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4082,13 +4082,107 @@ body.is-mobile.landing #footer {
 	z-index: 1000;
 }
 
-	/*  CSS pour le logo de retour à l'acceuille*/
-	#header h1 span{
-		display: none;
+/*  CSS pour le logo de retour à l'acceuille*/
+#header h1 span{
+	display: none;
+}
+#header h1 a img {
+	width: 100%;
+	max-width: 85px;
+	height: auto;
+	padding-top:0.5em;
+}
+
+/*INDEX
+
+/* Spotlight — support de <figure class="image"> */
+.spotlight figure.image {
+	-moz-order: 1;
+	-webkit-order: 1;
+	order: 1;
+	border-radius: 0;
+	width: 40%;
+	margin: 0;
+}
+
+.spotlight figure.image img {
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.spotlight figure.image figcaption {
+	font-size: 0.75em;
+	color: rgba(255,255,255,0.5);
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+	.spotlight figure.image {
+		width: 100%;
 	}
-	#header h1 a img {
-    width: 100%;
-    max-width: 85px;
-    height: auto;
-    padding-top:0.5em;
-	}
+}
+
+/* Section #one — centrage des listes */
+#one .key.numbers {
+	list-style: none;
+	padding: 0;
+	margin: 1.5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+}
+
+#one .key.numbers li {
+	padding-left: 0;
+}
+
+#one .sports.site {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.75em;
+}
+
+#one .sports.site li {
+	padding-left: 0;
+}
+
+/* Espaces entre émoji et texte */
+#one .key.numbers li,
+#one .sports.site li {
+	letter-spacing: 0.05em;
+}
+
+/* Section CTA — centrage de la liste arguments */
+#cta .arguments {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.4em;
+}
+
+#cta .arguments li {
+	padding-left: 0;
+}
+
+/* Boutons CTA — texte complet visible */
+#cta .actions .button {
+	max-width: 100%;
+	overflow: visible;
+	text-overflow: unset;
+	white-space: normal;
+	height: auto;
+	line-height: 1.5em;
+	padding: 1em 2em;
+}
