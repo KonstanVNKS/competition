@@ -4483,102 +4483,11 @@ img {
 
 
   /*css page cerine test*/
-  /* ========================================
-   PAGE ACCUEIL (body.accueilpage)
-   ======================================== */
-
-body.accueilpage .spotlight figure.image {
-	-moz-order: 1;
-	-webkit-order: 1;
-	order: 1;
-	border-radius: 0;
-	width: 40%;
-	margin: 0;
-}
-
-body.accueilpage .spotlight figure.image img {
-	border-radius: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-}
-
-body.accueilpage .spotlight figure.image figcaption {
-	font-size: 0.75em;
-	color: rgba(255,255,255,0.5);
-	padding: 0.5em 1em;
-	text-align: center;
-}
-
-@media screen and (max-width: 980px) {
-	body.accueilpage .spotlight figure.image {
-		width: 100%;
-	}
-}
-
-body.accueilpage #one .key.numbers {
-	list-style: none;
-	padding: 0;
-	margin: 1.5em 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.5em;
-}
-
-body.accueilpage #one .key.numbers li {
-	padding-left: 0;
-}
-
-body.accueilpage #one .sports.site {
-	list-style: none;
-	padding: 0;
-	margin: 1em 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 0.75em;
-}
-
-body.accueilpage #one .sports.site li {
-	padding-left: 0;
-}
-
-body.accueilpage #one .key.numbers li,
-body.accueilpage #one .sports.site li {
-	letter-spacing: 0.05em;
-}
-
-body.accueilpage #cta .arguments {
-	list-style: none;
-	padding: 0;
-	margin: 1em 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 0.4em;
-}
-
-body.accueilpage #cta .arguments li {
-	padding-left: 0;
-}
-
-body.accueilpage #cta .actions .button {
-	max-width: 100%;
-	overflow: visible;
-	text-overflow: unset;
-	white-space: normal;
-	height: auto;
-	line-height: 1.5em;
-	padding: 1em 2em;
-}
-
-
 /* ========================================
    PAGE PATINAGE ARTISTIQUE (body.patinage)
    ======================================== */
 
+/* Header — image de fond */
 body.patinage #page-wrapper section#main > header {
 	padding: 12em 0 10em 0;
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/patinage-banner.jpg");
@@ -4608,6 +4517,7 @@ body.patinage section#main > header p {
 	}
 }
 
+/* Galerie photos — grille */
 body.patinage .sport-images {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -4652,10 +4562,7 @@ body.patinage .sport-images figcaption {
 	}
 }
 
-body.patinage .video figure {
-	margin: 0;
-}
-
+/* Vidéo responsive */
 body.patinage .video iframe {
 	width: 100%;
 	max-width: 560px;
@@ -4677,20 +4584,10 @@ body.patinage .video figcaption {
 	}
 }
 
-body.patinage .wrapper.style5 article {
-	margin-bottom: 1em;
-}
-
+/* Bordure gauche teal sur les titres d'articles */
 body.patinage .wrapper.style5 article h2 {
-	color: #2e3842;
 	border-left: 4px solid #21b2a6;
 	padding-left: 0.75em;
-	margin-bottom: 1em;
-}
-
-body.patinage .wrapper.style5 article h3 {
-	color: #2e3842;
-	margin-top: 1.5em;
 }
 
 
@@ -4698,6 +4595,7 @@ body.patinage .wrapper.style5 article h3 {
    PAGE LOGIN (body.login)
    ======================================== */
 
+/* Header */
 body.login section#main > header {
 	padding: 10em 0 8em 0;
 	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/login-index.jpg");
@@ -4709,10 +4607,12 @@ body.login section#main > header {
 	color: #fff;
 }
 
+/* Fond section */
 body.login .wrapper.style5 {
 	background: #f8f9fa;
 }
 
+/* Centrage formulaires */
 body.login #form-login,
 body.login #form-signin {
 	max-width: 480px;
@@ -4720,6 +4620,7 @@ body.login #form-signin {
 	width: 100%;
 }
 
+/* Card blanche */
 body.login #form-login fieldset,
 body.login #form-signin fieldset {
 	background: #fff;
@@ -4730,17 +4631,20 @@ body.login #form-signin fieldset {
 	margin: 0;
 }
 
+/* Legend cachée */
 body.login #form-login legend,
 body.login #form-signin legend {
 	display: none;
 }
 
+/* Champs pleine largeur */
 body.login #form-login input,
 body.login #form-signin input {
 	width: 100%;
 	margin-bottom: 1.2em;
 }
 
+/* Focus teal */
 body.login #form-login input:focus,
 body.login #form-signin input:focus {
 	border: 2px solid #21b2a6;
@@ -4748,14 +4652,7 @@ body.login #form-signin input:focus {
 	box-shadow: 0 0 0 3px rgba(33,178,166,0.15);
 }
 
-body.login #form-login label,
-body.login #form-signin label {
-	margin-bottom: 0.4em;
-	display: block;
-	font-weight: 600;
-	color: #2e3842;
-}
-
+/* Boutons rouges */
 body.login #form-login button[type="submit"],
 body.login #form-signin button[type="submit"] {
 	width: 100%;
@@ -4772,22 +4669,15 @@ body.login #form-signin button[type="submit"]:hover {
 	cursor: pointer;
 }
 
-body.login #form-login p,
-body.login #form-signin p,
-body.login #form-signin a {
-	font-size: 0.9em;
-	text-align: center;
-	display: block;
-	margin: 0.5em 0;
+/* Séparateur teal */
+body.login .wrapper.style5 .inner hr {
+	border: none;
+	border-top: 2px solid #21b2a6;
+	margin: 3em auto;
+	width: 60px;
 }
 
-body.login .wrapper.style5 > h2 {
-	text-align: center;
-	margin-bottom: 1.5em;
-	padding-top: 2em;
-	color: #2e3842;
-}
-
+/* Sections centrées */
 body.login .wrapper.style5 .inner section {
 	max-width: 480px;
 	margin: 0 auto;
@@ -4796,24 +4686,7 @@ body.login .wrapper.style5 .inner section {
 
 body.login .wrapper.style5 .inner section h3 {
 	text-align: center;
-	color: #2e3842;
 	margin-bottom: 1.5em;
-}
-
-body.login .wrapper.style5 .inner hr {
-	border: none;
-	border-top: 2px solid #21b2a6;
-	margin: 3em auto;
-	width: 60px;
-}
-
-body.login #form-signin .row-names {
-	display: flex;
-	gap: 1em;
-}
-
-body.login #form-signin .row-names div {
-	flex: 1;
 }
 
 @media screen and (max-width: 736px) {
@@ -4821,11 +4694,6 @@ body.login #form-signin .row-names div {
 	body.login #form-signin {
 		max-width: 100%;
 		padding: 0 1em;
-	}
-
-	body.login #form-signin .row-names {
-		flex-direction: column;
-		gap: 0;
 	}
 
 	body.login #form-login fieldset,
