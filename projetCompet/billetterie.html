@@ -51,7 +51,8 @@
                         <li><a href="legalmention.html">Mentions légales</a></li>
                     </ul>
                 </nav>
-                <!--Menu Hamburger Mobile-->
+
+                <!-- Menu Hamburger Mobile -->
 				<nav id="nav">
 					<ul>
 						<li class="special">
@@ -95,7 +96,7 @@
             <article id="main">
                 <header>
                     <h2>Billetterie</h2>
-                    <p>Réservez vos places pour les Jeux Olympiques d’hiver 2026</p>
+                    <p>Choisissez la formule la plus adaptée pour vivre les Jeux Olympiques d’hiver 2026</p>
                 </header>
 
                 <section class="wrapper style5">
@@ -103,25 +104,35 @@
 
                         <!-- Intro -->
                         <div>
-                            <h3>Choisissez votre événement</h3>
+                            <h3>Nos formules de billets</h3>
                             <p>
-                                Sélectionnez un sport, une date et réservez vos billets pour vivre
-                                l’expérience unique des Jeux Olympiques d’hiver 2026.
+                                La billetterie des Jeux Olympiques d’hiver 2026 propose plusieurs formules afin de répondre
+                                aux différents profils de spectateurs : <strong>ticket journalier</strong>,
+                                <strong>pass événement</strong> et <strong>tarif réduit</strong>.
+                                Sélectionnez les billets qui vous intéressent et ajoutez-les à votre panier.
                             </p>
                         </div>
 
                         <hr>
 
-                        <!-- Tableau billets -->
+                        <!-- Message panier global -->
                         <div>
-                            <h3>Billets disponibles</h3>
-                            
                             <p id="panier-message" style="display: none;"></p>
+                        </div>
+
+                        <!-- Tickets journaliers -->
+                        <div>
+                            <h3>Tickets journaliers</h3>
+                            <p>
+                                Les tickets journaliers permettent d’assister à une journée de compétition pour un sport donné.
+                                Ils sont idéaux pour les visiteurs souhaitant vivre une expérience ciblée.
+                            </p>
 
                             <div class="table-wrapper">
                                 <table class="alt">
                                     <thead>
                                         <tr>
+                                            <th>Formule</th>
                                             <th>Sport</th>
                                             <th>Date</th>
                                             <th>Lieu</th>
@@ -130,32 +141,33 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr data-sport="Bobsleigh" data-date="15 février 2026" data-lieu="Cortina" data-prix="120">
-                                            <td>Bobsleigh</td>
+                                        <tr data-type="Ticket journalier" data-sport="Bobsleigh" data-date="15 février 2026" data-lieu="Cortina" data-prix="120">
+                                            <td>Ticket journalier</td>
+                                            <td><a href="bobsleigh.html">Bobsleigh</a></td>
                                             <td>15 février 2026</td>
                                             <td>Cortina</td>
                                             <td>120€</td>
                                             <td>
                                                 <div class="quantite-container">
                                                     <button class="button small reserver-btn">Réserver</button>
-
                                                     <div class="quantite-controls" style="display: none;">
-                                                        <button type="button" class="button">-</button>
+                                                        <button type="button" class="moins">-</button>
                                                         <span class="quantite">1</span>
-                                                        <button type="button" class="button primary">+</button>
+                                                        <button type="button" class="plus">+</button>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr data-sport="Luge" data-date="8 février 2026" data-lieu="Cortina" data-prix="60">
-                                            <td>Luge</td>
+
+                                        <tr data-type="Ticket journalier" data-sport="Luge" data-date="8 février 2026" data-lieu="Cortina" data-prix="60">
+                                            <td>Ticket journalier</td>
+                                            <td><a href="luge.html">Luge</a></td>
                                             <td>8 février 2026</td>
                                             <td>Cortina</td>
                                             <td>60€</td>
                                             <td>
                                                 <div class="quantite-container">
                                                     <button class="button small reserver-btn">Réserver</button>
-
                                                     <div class="quantite-controls" style="display: none;">
                                                         <button type="button" class="moins">-</button>
                                                         <span class="quantite">1</span>
@@ -164,15 +176,16 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr data-sport="Skeleton" data-date="13 février 2026" data-lieu="Cortina" data-prix="100">
-                                            <td>Skeleton</td>
+
+                                        <tr data-type="Ticket journalier" data-sport="Skeleton" data-date="13 février 2026" data-lieu="Cortina" data-prix="100">
+                                            <td>Ticket journalier</td>
+                                            <td><a href="skeleton.html">Skeleton</a></td>
                                             <td>13 février 2026</td>
                                             <td>Cortina</td>
                                             <td>100€</td>
                                             <td>
                                                 <div class="quantite-container">
                                                     <button class="button small reserver-btn">Réserver</button>
-
                                                     <div class="quantite-controls" style="display: none;">
                                                         <button type="button" class="moins">-</button>
                                                         <span class="quantite">1</span>
@@ -181,15 +194,16 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr data-sport="Patinage artistique" data-date="10 février 2026" data-lieu="Milan" data-prix="150">
-                                            <td>Patinage artistique</td>
+
+                                        <tr data-type="Ticket journalier" data-sport="Patinage artistique" data-date="10 février 2026" data-lieu="Milan" data-prix="150">
+                                            <td>Ticket journalier</td>
+                                            <td><a href="patinage.html">Patinage artistique</a></td>
                                             <td>10 février 2026</td>
                                             <td>Milan</td>
                                             <td>150€</td>
                                             <td>
                                                 <div class="quantite-container">
                                                     <button class="button small reserver-btn">Réserver</button>
-
                                                     <div class="quantite-controls" style="display: none;">
                                                         <button type="button" class="moins">-</button>
                                                         <span class="quantite">1</span>
@@ -198,15 +212,16 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr data-sport="Ski de fond" data-date="18 février 2026" data-lieu="Alpes" data-prix="80">
-                                            <td>Ski de fond</td>
+
+                                        <tr data-type="Ticket journalier" data-sport="Ski de fond" data-date="18 février 2026" data-lieu="Alpes" data-prix="80">
+                                            <td>Ticket journalier</td>
+                                            <td><a href="skinordique.html">Ski de fond</a></td>
                                             <td>18 février 2026</td>
                                             <td>Alpes</td>
                                             <td>80€</td>
                                             <td>
                                                 <div class="quantite-container">
                                                     <button class="button small reserver-btn">Réserver</button>
-
                                                     <div class="quantite-controls" style="display: none;">
                                                         <button type="button" class="moins">-</button>
                                                         <span class="quantite">1</span>
@@ -218,7 +233,181 @@
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
 
+                        <hr>
+
+                        <!-- Pass événement -->
+                        <div>
+                            <h3>Pass événement</h3>
+                            <p>
+                                Les pass événement sont conçus pour les spectateurs souhaitant assister à plusieurs sessions
+                                ou profiter d’une expérience plus complète sur un même site ou autour d’un même univers sportif.
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Formule</th>
+                                            <th>Nom du pass</th>
+                                            <th>Accès</th>
+                                            <th>Lieu</th>
+                                            <th>Prix</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-type="Pass événement" data-sport="Pass Glisse Cortina" data-date="Du 12 au 16 février 2026" data-lieu="Cortina" data-prix="250">
+                                            <td>Pass événement</td>
+                                            <td>Pass Glisse Cortina</td>
+                                            <td>Skeleton + Luge + Bobsleigh</td>
+                                            <td>Cortina</td>
+                                            <td>250€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr data-type="Pass événement" data-sport="Pass Artistique Milan" data-date="Du 9 au 11 février 2026" data-lieu="Milan" data-prix="280">
+                                            <td>Pass événement</td>
+                                            <td>Pass Artistique Milan</td>
+                                            <td>Sessions de patinage artistique</td>
+                                            <td>Milan</td>
+                                            <td>280€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr data-type="Pass événement" data-sport="Pass Nordic Experience" data-date="Du 18 au 22 février 2026" data-lieu="Alpes" data-prix="190">
+                                            <td>Pass événement</td>
+                                            <td>Pass Nordic Experience</td>
+                                            <td>Épreuves majeures de ski de fond</td>
+                                            <td>Alpes</td>
+                                            <td>190€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Tarifs réduits -->
+                        <div>
+                            <h3>Tarifs réduits</h3>
+                            <p>
+                                Des tarifs réduits sont proposés pour permettre à un plus large public de profiter des Jeux.
+                                Ils concernent notamment les jeunes, les étudiants et les seniors, selon les disponibilités.
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Formule</th>
+                                            <th>Catégorie</th>
+                                            <th>Accès</th>
+                                            <th>Condition</th>
+                                            <th>Prix</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-type="Tarif réduit" data-sport="Tarif jeune" data-date="Selon disponibilité" data-lieu="Tous sites" data-prix="45">
+                                            <td>Tarif réduit</td>
+                                            <td>Tarif jeune</td>
+                                            <td>Ticket journalier sélectionné</td>
+                                            <td>Moins de 18 ans</td>
+                                            <td>45€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr data-type="Tarif réduit" data-sport="Tarif étudiant" data-date="Selon disponibilité" data-lieu="Tous sites" data-prix="55">
+                                            <td>Tarif réduit</td>
+                                            <td>Tarif étudiant</td>
+                                            <td>Ticket journalier sélectionné</td>
+                                            <td>Carte étudiant valide</td>
+                                            <td>55€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr data-type="Tarif réduit" data-sport="Tarif senior" data-date="Selon disponibilité" data-lieu="Tous sites" data-prix="50">
+                                            <td>Tarif réduit</td>
+                                            <td>Tarif senior</td>
+                                            <td>Ticket journalier sélectionné</td>
+                                            <td>65 ans et plus</td>
+                                            <td>50€</td>
+                                            <td>
+                                                <div class="quantite-container">
+                                                    <button class="button small reserver-btn">Réserver</button>
+                                                    <div class="quantite-controls" style="display: none;">
+                                                        <button type="button" class="moins">-</button>
+                                                        <span class="quantite">1</span>
+                                                        <button type="button" class="plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Infos -->
+                        <div>
+                            <h3>Informations pratiques</h3>
+                            <ul>
+                                <li>Les billets sont proposés dans la limite des places disponibles.</li>
+                                <li>Les tarifs réduits peuvent nécessiter un justificatif lors du contrôle.</li>
+                                <li>Le panier vous permet de regrouper plusieurs billets avant validation finale.</li>
+                                <li>Les pass événement donnent accès à plusieurs compétitions selon la formule choisie.</li>
+                            </ul>
                         </div>
 
                         <hr>
@@ -226,6 +415,7 @@
                         <div>
 							<ul class="actions">
 								<li><a href="programme.html" class="button primary">Voir le programme</a></li>
+								<li><a href="panier.html" class="button">Accéder au panier</a></li>
 								<li><a href="index.html" class="button">Retour à l'accueil</a></li>
 							</ul>
 						</div>
@@ -233,10 +423,10 @@
                 </section>
             </article>
 
-			<!--Footer-->
+			<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
 					<li><a href="https://www.facebook.com/OlimpiadiMilanoCortina2026" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="https://www.instagram.com/milanocortina2026/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="https://github.com/KonstanVNKS/competition" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -260,23 +450,23 @@
         document.addEventListener("DOMContentLoaded", function () {
             const messagePanier = document.getElementById("panier-message");
             const lignes = document.querySelectorAll("tbody tr");
-        
+
             function getPanier() {
                 return JSON.parse(localStorage.getItem("panier")) || [];
             }
-        
+
             function savePanier(panier) {
                 localStorage.setItem("panier", JSON.stringify(panier));
             }
-        
+
             function getKey(item) {
-                return `${item.sport}|${item.date}|${item.lieu}`;
+                return `${item.type}|${item.sport}|${item.date}|${item.lieu}`;
             }
-        
+
             function updateMessageGlobal() {
                 const panier = getPanier();
                 const totalArticles = panier.reduce((total, item) => total + item.quantite, 0);
-        
+
                 if (totalArticles > 0) {
                     messagePanier.style.display = "block";
                     messagePanier.innerHTML = `
@@ -288,23 +478,24 @@
                     messagePanier.innerHTML = "";
                 }
             }
-        
+
             function syncLigneAvecPanier(ligne) {
                 const reserverBtn = ligne.querySelector(".reserver-btn");
                 const controls = ligne.querySelector(".quantite-controls");
                 const quantiteSpan = ligne.querySelector(".quantite");
-        
+
                 const item = {
+                    type: ligne.dataset.type,
                     sport: ligne.dataset.sport,
                     date: ligne.dataset.date,
                     lieu: ligne.dataset.lieu,
                     prix: parseFloat(ligne.dataset.prix)
                 };
-        
+
                 const panier = getPanier();
                 const key = getKey(item);
                 const existe = panier.find(p => getKey(p) === key);
-        
+
                 if (existe && existe.quantite > 0) {
                     reserverBtn.style.display = "none";
                     controls.style.display = "inline-flex";
@@ -315,58 +506,58 @@
                     quantiteSpan.textContent = "1";
                 }
             }
-        
+
             lignes.forEach(ligne => {
                 const reserverBtn = ligne.querySelector(".reserver-btn");
                 const controls = ligne.querySelector(".quantite-controls");
                 const plus = ligne.querySelector(".plus");
                 const moins = ligne.querySelector(".moins");
-                const quantiteSpan = ligne.querySelector(".quantite");
-        
+
                 const itemBase = {
+                    type: ligne.dataset.type,
                     sport: ligne.dataset.sport,
                     date: ligne.dataset.date,
                     lieu: ligne.dataset.lieu,
                     prix: parseFloat(ligne.dataset.prix)
                 };
-        
+
                 reserverBtn.addEventListener("click", function () {
                     let panier = getPanier();
                     const key = getKey(itemBase);
                     const index = panier.findIndex(item => getKey(item) === key);
-        
+
                     if (index === -1) {
                         panier.push({ ...itemBase, quantite: 1 });
                     } else {
                         panier[index].quantite = 1;
                     }
-        
+
                     savePanier(panier);
                     syncLigneAvecPanier(ligne);
                     updateMessageGlobal();
                 });
-        
+
                 plus.addEventListener("click", function () {
                     let panier = getPanier();
                     const key = getKey(itemBase);
                     const index = panier.findIndex(item => getKey(item) === key);
-        
+
                     if (index === -1) {
                         panier.push({ ...itemBase, quantite: 1 });
                     } else {
                         panier[index].quantite += 1;
                     }
-        
+
                     savePanier(panier);
                     syncLigneAvecPanier(ligne);
                     updateMessageGlobal();
                 });
-        
+
                 moins.addEventListener("click", function () {
                     let panier = getPanier();
                     const key = getKey(itemBase);
                     const index = panier.findIndex(item => getKey(item) === key);
-        
+
                     if (index !== -1) {
                         if (panier[index].quantite > 1) {
                             panier[index].quantite -= 1;
@@ -374,15 +565,15 @@
                             panier.splice(index, 1);
                         }
                     }
-        
+
                     savePanier(panier);
                     syncLigneAvecPanier(ligne);
                     updateMessageGlobal();
                 });
-        
+
                 syncLigneAvecPanier(ligne);
             });
-        
+
             updateMessageGlobal();
         });
         </script>
