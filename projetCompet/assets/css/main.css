@@ -4025,17 +4025,17 @@ input, select, textarea {
 		background-position: center;
 	}
 	body.contact-page #main > header {
-		background-image: url("../../images/apropos.jpg");
+		background-image: url("../../images/apropos.jpg") !important;
 		background-size: cover;
 		background-position: center;
 	}
 	body.supInfo-page #main > header {
-		background-image: url("../../images/apropos.jpg");
+		background-image: url("../../images/apropos.jpg") !important;
 		background-size: cover;
 		background-position: center;
 	}
 	body.legalmention-page #main > header {
-		background-image: url("../../images/apropos.jpg");
+		background-image: url("../../images/apropos.jpg") !important;
 		background-size: cover;
 		background-position: center;
 	}
@@ -4478,4 +4478,408 @@ img {
 	width: 100%;
 	height: auto;
 	aspect-ratio: 16/9;
+  }
+
+
+
+  /*css page cerine test*/
+  /*INDEX
+
+/* Spotlight — support de <figure class="image"> */
+.spotlight figure.image {
+	-moz-order: 1;
+	-webkit-order: 1;
+	order: 1;
+	border-radius: 0;
+	width: 40%;
+	margin: 0;
+  }
+  
+  .spotlight figure.image img {
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+  }
+  
+  .spotlight figure.image figcaption {
+	font-size: 0.75em;
+	color: rgba(255,255,255,0.5);
+	padding: 0.5em 1em;
+	text-align: center;
+  }
+  
+  @media screen and (max-width: 980px) {
+	.spotlight figure.image {
+	  width: 100%;
+	}
+  }
+  
+  /* Section #one — centrage des listes */
+  #one .key.numbers {
+	list-style: none;
+	padding: 0;
+	margin: 1.5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+  }
+  
+  #one .key.numbers li {
+	padding-left: 0;
+  }
+  
+  #one .sports.site {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.75em;
+  }
+  
+  #one .sports.site li {
+	padding-left: 0;
+  }
+  
+  /* Espaces entre émoji et texte */
+  #one .key.numbers li,
+  #one .sports.site li {
+	letter-spacing: 0.05em;
+  }
+  
+  /* Section CTA — centrage de la liste arguments */
+  #cta .arguments {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.4em;
+  }
+  
+  #cta .arguments li {
+	padding-left: 0;
+  }
+  
+  /* Boutons CTA — texte complet visible */
+  #cta .actions .button {
+	max-width: 100%;
+	overflow: visible;
+	text-overflow: unset;
+	white-space: normal;
+	height: auto;
+	line-height: 1.5em;
+	padding: 1em 2em;
+  }
+  
+  
+  
+  
+  /* ========================================
+	PAGE PATINAGE ARTISTIQUE
+	 ======================================== */
+  
+  /* Header de la page patinage — image de fond */
+  body.patinage #page-wrapper section#main > header {
+	padding: 12em 0 10em 0;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/patinage-banner.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+  }
+  
+  body.patinage section#main > header h2 {
+	font-size: 1.75em;
+	margin: 0 0 0.5em 0;
+	color: #fff;
+  }
+  
+  body.patinage section#main > header p {
+	color: rgba(255,255,255,0.8);
+	letter-spacing: 0.225em;
+	text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 736px) {
+	body.patinage section#main > header {
+	  padding: 6em 2em 4em 2em;
+	}
+  }
+  
+  /* Galerie photos — grille 3 colonnes */
+  .sport-images {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em;
+	margin: 2em 0;
+  }
+  
+  .sport-images figure {
+	margin: 0;
+	overflow: hidden;
+	border-radius: 4px;
+  }
+  
+  .sport-images figure img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+  }
+  
+  .sport-images figure img:hover {
+	transform: scale(1.05);
+  }
+  
+  .sport-images figcaption {
+	font-size: 0.8em;
+	color: rgba(0,0,0,0.6);
+	padding: 0.5em 0;
+	text-align: center;
+  }
+  
+  @media screen and (max-width: 980px) {
+	.sport-images {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  @media screen and (max-width: 736px) {
+	.sport-images {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
+  /* Vidéo responsive */
+  .video figure {
+	margin: 0;
+  }
+  
+  .video iframe {
+	width: 100%;
+	max-width: 560px;
+	height: 315px;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  .video figcaption {
+	font-size: 0.85em;
+	color: rgba(0,0,0,0.6);
+	text-align: center;
+	margin-top: 0.5em;
+  }
+  
+  @media screen and (max-width: 736px) {
+	.video iframe {
+	  height: 220px;
+	}
+  }
+  
+  /* Articles — espacement et séparation visuelle */
+  .wrapper.style5 article {
+	margin-bottom: 1em;
+  }
+  
+  .wrapper.style5 article h2 {
+	color: #2e3842;
+	border-left: 4px solid #21b2a6;
+	padding-left: 0.75em;
+	margin-bottom: 1em;
+  }
+  
+  .wrapper.style5 article h3 {
+	color: #2e3842;
+	margin-top: 1.5em;
+  }
+  
+  
+  /* ========================================
+	 PAGE LOGIN
+	 ======================================== */
+  
+  /* Header Mon Compte */
+  body.landing section#main > header {
+	padding: 10em 0 8em 0;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/login-index.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+  }
+  
+  /* Formulaires — centrage et largeur max */
+  #form-login,
+  #form-signin {
+	max-width: 480px;
+	margin: 0 auto;
+	width: 100%;
+  }
+  
+  /* Fieldset */
+  #form-login fieldset,
+  #form-signin fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* Legend */
+  #form-login legend,
+  #form-signin legend {
+	display: none;
+  }
+  
+  /* Champs */
+  #form-login input,
+  #form-signin input {
+	width: 100%;
+	margin-bottom: 1.2em;
+  }
+  
+  /* Boutons submit */
+  #form-login button[type="submit"],
+  #form-signin button[type="submit"] {
+	width: 100%;
+	margin: 1em 0;
+	background-color: #ed4933;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+  }
+  
+  #form-login button[type="submit"]:hover,
+  #form-signin button[type="submit"]:hover {
+	background-color: #ef5e4a;
+  }
+  
+  /* Liens mot de passe oublié / s'inscrire */
+  #form-login p,
+  #form-signin p,
+  #form-signin a {
+	font-size: 0.9em;
+	text-align: center;
+	display: block;
+	margin: 0.5em 0;
+  }
+  
+  /* Titre h2 Accès à votre espace */
+  .wrapper.style5 > h2 {
+	text-align: center;
+	margin-bottom: 1.5em;
+	padding-top: 2em;
+	color: #2e3842;
+  }
+  
+  /* Sections connexion / création */
+  .wrapper.style5 .inner section {
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 2em 0;
+  }
+  
+  .wrapper.style5 .inner section h3 {
+	text-align: center;
+	color: #2e3842;
+	margin-bottom: 1.5em;
+  }
+  
+  @media screen and (max-width: 736px) {
+	#form-login,
+	#form-signin {
+	  max-width: 100%;
+	  padding: 0 1em;
+	}
+  }
+  
+  /* ========================================
+	 PAGE LOGIN — AMÉLIORATIONS ESTHÉTIQUES
+	 ======================================== */
+  
+  /* Fond légèrement coloré sur la section */
+  body.landing .wrapper.style5 {
+	background: #f8f9fa;
+  }
+  
+  /* Card autour des formulaires */
+  #form-login fieldset,
+  #form-signin fieldset {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+	padding: 2.5em;
+	border: none;
+  }
+  
+  /* Champs de saisie — bordure au focus */
+  #form-login input:focus,
+  #form-signin input:focus {
+	border: 2px solid #21b2a6;
+	background: #fff;
+	box-shadow: 0 0 0 3px rgba(33,178,166,0.15);
+  }
+  
+  /* Labels */
+  #form-login label,
+  #form-signin label {
+	margin-bottom: 0.4em;
+	display: block;
+	font-weight: 600;
+	color: #2e3842;
+  }
+  
+  /* Ligne de séparation stylisée */
+  body.landing .wrapper.style5 .inner hr {
+	border: none;
+	border-top: 2px solid #21b2a6;
+	margin: 3em auto;
+	width: 60px;
+  }
+  
+  /* Prénom et Nom côte à côte */
+  #form-signin .row-names {
+	display: flex;
+	gap: 1em;
+  }
+  
+  #form-signin .row-names div {
+	flex: 1;
+  }
+  
+  /* Lien bas de formulaire */
+  #form-login p,
+  #form-signin p {
+	text-align: center;
+	font-size: 0.9em;
+	margin: 0.5em 0;
+  }
+  
+  /* Hover sur les boutons */
+  #form-login button[type="submit"]:hover,
+  #form-signin button[type="submit"]:hover {
+	background-color: #ef5e4a;
+	cursor: pointer;
+  }
+  
+  @media screen and (max-width: 736px) {
+	#form-signin .row-names {
+	  flex-direction: column;
+	  gap: 0;
+	}
+  
+	#form-login fieldset,
+	#form-signin fieldset {
+	  padding: 1.5em;
+	}
   }
