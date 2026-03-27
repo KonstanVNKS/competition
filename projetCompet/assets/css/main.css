@@ -4009,93 +4009,6 @@ body.is-mobile.landing #footer {
 
 
 
-/* MENU DESKTOP */
-#nav-desktop {
-	display: none;
-}
-
-.menu-horizontal {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.menu-horizontal li {
-	margin: 0 1px;
-	position: relative;
-}
-
-.menu-horizontal a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-}
-
-/* DROPDOWN */
-.dropdown-menu {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background: var(--bg-main);
-	list-style: none;
-	padding: 5px 0;
-	display: none;
-	min-width: 150px;
-}
-
-.dropdown-menu li {
-	padding: 5px 10px;
-}
-
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
-
-/* RESPONSIVE */
-@media screen and (min-width: 768px) {
-	#nav-desktop {
-			display: block;
-	}
-
-	#nav {
-			display: none;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	#nav-desktop {
-			display: none;
-	}
-
-	#nav {
-			display: block;
-	}
-}
-
-/* HEADER FIXE */
-#header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1000;
-}
-
-/*  CSS pour le logo de retour à l'acceuille*/
-#header h1 span{
-	display: none;
-}
-#header h1 a img {
-	width: 100%;
-	max-width: 85px;
-	height: auto;
-	padding-top:0.5em;
-}
-
-
-
-
 /* ========================================
    MENU DESKTOP — CERINE
    ======================================== */
@@ -4169,6 +4082,97 @@ body.is-mobile.landing #footer {
 	max-width: 85px;
 	height: auto;
 	padding-top: 0.5em;
+}
+
+
+/* ========================================
+   PAGE ACCUEIL (body.accueilpage)
+   ======================================== */
+
+/* Spotlight — support de <figure class="image"> */
+body.accueilpage .spotlight figure.image {
+	-moz-order: 1;
+	-webkit-order: 1;
+	order: 1;
+	border-radius: 0;
+	width: 40%;
+	margin: 0;
+}
+
+body.accueilpage .spotlight figure.image img {
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+body.accueilpage .spotlight figure.image figcaption {
+	font-size: 0.75em;
+	color: rgba(255,255,255,0.5);
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+	body.accueilpage .spotlight figure.image {
+		width: 100%;
+	}
+}
+
+/* Listes #one centrées */
+body.accueilpage #one .key.numbers {
+	list-style: none;
+	padding: 0;
+	margin: 1.5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+}
+
+body.accueilpage #one .key.numbers li {
+	padding-left: 0;
+}
+
+body.accueilpage #one .sports.site {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.75em;
+}
+
+body.accueilpage #one .sports.site li {
+	padding-left: 0;
+}
+
+/* CTA — liste arguments */
+body.accueilpage #cta .arguments {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.4em;
+}
+
+body.accueilpage #cta .arguments li {
+	padding-left: 0;
+}
+
+/* CTA — boutons texte complet visible */
+body.accueilpage #cta .actions .button {
+	max-width: 100%;
+	overflow: visible;
+	text-overflow: unset;
+	white-space: normal;
+	height: auto;
+	line-height: 1.5em;
+	padding: 1em 2em;
 }
 
 
@@ -4279,6 +4283,15 @@ body.patinage .wrapper.style5 article h2 {
 	padding-left: 0.75em;
 }
 
+body.patinage .wrapper.style5 article {
+	margin-bottom: 1em;
+}
+
+body.patinage .wrapper.style5 article h3 {
+	color: #2e3842;
+	margin-top: 1.5em;
+}
+
 
 /* ========================================
    PAGE LOGIN (body.login)
@@ -4341,6 +4354,15 @@ body.login #form-signin input:focus {
 	box-shadow: 0 0 0 3px rgba(33,178,166,0.15);
 }
 
+/* Labels */
+body.login #form-login label,
+body.login #form-signin label {
+	margin-bottom: 0.4em;
+	display: block;
+	font-weight: 600;
+	color: #2e3842;
+}
+
 /* Boutons rouges */
 body.login #form-login button[type="submit"],
 body.login #form-signin button[type="submit"] {
@@ -4358,12 +4380,28 @@ body.login #form-signin button[type="submit"]:hover {
 	cursor: pointer;
 }
 
+/* Liens */
+body.login #form-login p,
+body.login #form-signin p {
+	font-size: 0.9em;
+	text-align: center;
+	margin: 0.5em 0;
+}
+
 /* Séparateur teal */
 body.login .wrapper.style5 .inner hr {
 	border: none;
 	border-top: 2px solid #21b2a6;
 	margin: 3em auto;
 	width: 60px;
+}
+
+/* Titre Accès à votre espace */
+body.login .wrapper.style5 > h2 {
+	text-align: center;
+	margin-bottom: 1.5em;
+	padding-top: 2em;
+	color: #2e3842;
 }
 
 /* Sections centrées */
