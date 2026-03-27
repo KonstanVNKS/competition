@@ -4034,3 +4034,44 @@ input, select, textarea {
 		height: 46px;
 		padding-top: 15px;
 	}
+
+	/* CSS pour le texte d'athlètes emblématiques */
+	.sport-section {
+		margin-bottom: 3em;
+	}
+	
+	.athlete {
+		margin-bottom: 2em;
+		padding: 1em;
+		background: rgba(255, 255, 255, 0.03);
+		border-radius: 5px;
+	}
+	
+	.athlete h4 {
+		margin-bottom: 0.5em;
+	}
+
+
+	/* CSS pour les images d'athlètes emblématiques */
+	.athlete-image {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	.athlete-image img {
+		width: 100%;
+		max-width: 600px;
+		border-radius: 10px;
+	}
+	
+	.athlete-image figcaption {
+		font-size: 0.9em;
+		color: #aaa;
+		margin-top: 0.5em;
+	}
+
+	.athlete {
+		display: flex;
+		gap: 20px;
+		align-items: flex-start;
+	}
