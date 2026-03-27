@@ -4025,7 +4025,7 @@ input, select, textarea {
 		background-position: center;
 	}
 
-	/* logo des jeux */
+	/* Logo des jeux */
 	#header h1 span{
 		display: none;
 	}
@@ -4059,8 +4059,9 @@ input, select, textarea {
 	}
 	
 	.athlete-image img {
-		width: 100%;
-		max-width: 600px;
+		width: 250px;
+    	height: 250px;
+    	object-fit: cover;
 		border-radius: 10px;
 	}
 	
@@ -4073,5 +4074,5 @@ input, select, textarea {
 	.athlete {
 		display: flex;
 		gap: 20px;
-		align-items: flex-start;
+		align-items: center;
 	}
