@@ -4239,7 +4239,7 @@ input, select, textarea {
 
     .submenu{
         margin : 0px;
-        font-weight: normal
+        font-weight: 400;
     }
         /*  CSS pour le logo de retour à l'accueil*/
     #header h1 span{
@@ -4841,54 +4841,97 @@ body.accueilpage #cta {
     background-color: transparent;
 }
 
-#header > nav > ul > li > span.submenu-name{
+/* CSS pour le texte d'athlètes emblématiques */
+.sport-section {
+    margin-bottom: 3em;
+}
+
+.athlete {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 5px;
+}
+
+.athlete h4 {
+    margin-bottom: 0.5em;
+}
+
+
+/* CSS pour les images d'athlètes emblématiques */
+.athlete-image {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.athlete-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.athlete-image figcaption {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 0.5em;
+}
+
+.athlete {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#nav-desktop .menu-horizontal > li > span {
     border: 0;
     color: #fff;
     display: block;
-    font-size: 0.8em;
-    letter-spacing: 0.225em;
-    padding: 0 5px;
+    font-size: 0.8em !important;
+    letter-spacing: 0.225em !important;
+    padding: 0 1.5em;
     text-transform: uppercase;
+    cursor: default;
+    font-weight:bold !important;
+}
+/* Fil d'ariane */
+nav[aria-label="fil-ariane"] {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    top: 0;
+    line-height: 3em;
+    height: 3em;
 }
 
-    /* CSS pour le texte d'athlètes emblématiques */
-    .sport-section {
-        margin-bottom: 3em;
-    }
-   
-    .athlete {
-        margin-bottom: 2em;
-        padding: 1em;
-        background: rgba(255, 255, 255, 0.03);
-        border-radius: 5px;
-    }
-   
-    .athlete h4 {
-        margin-bottom: 0.5em;
-    }
+nav[aria-label="fil-ariane"] ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+    align-items: flex-start;
+}
 
+nav[aria-label="fil-ariane"] ol li {
+    font-size: 0.6em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    color: #fff;
+}
 
-    /* CSS pour les images d'athlètes emblématiques */
-    .athlete-image {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-   
-    .athlete-image img {
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-   
-    .athlete-image figcaption {
-        font-size: 0.9em;
-        color: #aaa;
-        margin-top: 0.5em;
-    }
+nav[aria-label="fil-ariane"] ol li + li::before {
+    content: "›";
+    margin-right: 0.5em;
+    opacity: 0.6;
+}
 
-    .athlete {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
+nav[aria-label="fil-ariane"] ol li a {
+    color: #fff;
+    border: 0;
+    opacity: 0.7;
+}
+
+nav[aria-label="fil-ariane"] ol li a:hover {
+    opacity: 1;
+}
