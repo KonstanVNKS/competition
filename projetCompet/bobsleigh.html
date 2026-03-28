@@ -28,10 +28,14 @@
                         <img src="images/olympic-rings-white-md.png" alt="logo JO">
                     </a>
 				</h1>
-                <nav id="nav-desktop">
+                <nav id="nav-desktop">	
                     <ul class="menu-horizontal">
+						<li class="search-item">
+							<input type="text" class="search-input" placeholder="Rechercher..." />
+							<ul class="search-results"></ul>
+						</li>
                         <li class="dropdown">
-                            <span>Sports</span>
+                            <span class="submenu-name">Sports</span>
                             <ul class="dropdown-menu">
                                 <li><a href="skeleton.html">Skeleton</a></li>
                                 <li><a href="patinage.html">Patinage artistique</a></li>
@@ -44,7 +48,7 @@
                         <li><a href="programme.html">Programme</a></li>
                         <li><a href="billetterie.html">Tickets</a></li>
 						<li class="dropdown">
-							<span>Mon compte</span>
+							<span class="submenu-name">Mon compte</span>
 							<ul class="dropdown-menu">
 								<li><a href="login.html">Se connecter</a></li>
 								<li><a href="page-utilisateur.html">Mon profil</a></li>
@@ -65,6 +69,10 @@
 							<a href="#menu" class="menuToggle"><span>Menu</span></a>
 							<div id="menu">
                                 <ul>
+									<li class="search-item">
+										<input type="text" class="search-input" placeholder="Rechercher..." />
+										<ul class="search-results"></ul>
+									</li>
                                     <li class="submenu">
                                         <p class="submenu">Sports</p>
                                         <ul>
@@ -92,13 +100,13 @@
                                     <li><a href="a_propos.html">A propos</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="legalmention.html">Mentions légales</a></li>
+								
                                 </ul>
 							</div>
 						</li>
 					</ul>
 				</nav>
 			</header>
-
 			<!-- Main -->
 			<article id="main">
 				<header>
@@ -261,6 +269,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/search.js"></script>
 
 
 	</body>

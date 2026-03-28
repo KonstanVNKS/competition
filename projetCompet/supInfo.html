@@ -29,23 +29,27 @@
                         <img src="images/olympic-rings-white-md.png" alt="logo JO">
                     </a>
 				</h1>
-                <nav id="nav-desktop">
+                <nav id="nav-desktop">	
                     <ul class="menu-horizontal">
+						<li class="search-item">
+							<input type="text" class="search-input" placeholder="Rechercher..." />
+							<ul class="search-results"></ul>
+						</li>
                         <li class="dropdown">
-                            <span>Sports</span>
+                            <span class="submenu-name">Sports</span>
                             <ul class="dropdown-menu">
                                 <li><a href="skeleton.html">Skeleton</a></li>
                                 <li><a href="patinage.html">Patinage artistique</a></li>
                                 <li><a href="luge.html">Luge</a></li>
                                 <li><a href="bobsleigh.html">Bobsleigh</a></li>
                                 <li><a href="skinordique.html">Ski nordique</a></li>
-                                <li><a href="athletes.html">Athletes emblematiques</a></li> 
+								<li><a href="athletes.html">Athletes emblematiques</a></li> 
                             </ul>
                         </li>
                         <li><a href="programme.html">Programme</a></li>
                         <li><a href="billetterie.html">Tickets</a></li>
 						<li class="dropdown">
-							<span>Mon compte</span>
+							<span class="submenu-name">Mon compte</span>
 							<ul class="dropdown-menu">
 								<li><a href="login.html">Se connecter</a></li>
 								<li><a href="page-utilisateur.html">Mon profil</a></li>
@@ -66,6 +70,10 @@
 							<a href="#menu" class="menuToggle"><span>Menu</span></a>
 							<div id="menu">
                                 <ul>
+									<li class="search-item">
+										<input type="text" class="search-input" placeholder="Rechercher..." />
+										<ul class="search-results"></ul>
+									</li>
                                     <li class="submenu">
                                         <p class="submenu">Sports</p>
                                         <ul>
@@ -74,7 +82,7 @@
                                             <li><a href="luge.html">Luge</a></li>
                                             <li><a href="bobsleigh.html">Bobsleigh</a></li>
                                             <li><a href="skinordique.html">Ski nordique</a></li>
-                                            <li><a href="athletes.html">Athletes emblematiques</a></li> 
+											<li><a href="athletes.html">Athletes emblematiques</a></li> 
                                         </ul>
                                     </li>
 
@@ -93,283 +101,284 @@
                                     <li><a href="a_propos.html">A propos</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="legalmention.html">Mentions légales</a></li>
+								
                                 </ul>
 							</div>
 						</li>
 					</ul>
 				</nav>
 			</header>
-        <!-- Main -->
-        <div class="supinfo-banner">
-            <h2>Infos Pratiques</h2>
-            <p>Transports &bull; Sites de compétition &bull; Cartes interactives</p>
-        </div>
-        <div class="wrapper style3">
-            <div class="inner">
- 
-                <header class="major">
-                    <h2>Transports en commun</h2>
-                    <p>Comment rejoindre les sites olympiques sans voiture</p>
-                </header>
- 
-                <div class="transport-grid">
- 
-                    <div class="tc metro">
-                        <span class="tc-icon">🚇</span>
-                        <h3>Métro ATM – Milan</h3>
-                        <p>La <strong>ligne M2 (verte)</strong> relie directement le centre de Milan
-                           à la station <strong>Assago Forum</strong>. Horaires étendus jusqu'à
-                           <strong>2h du matin</strong> pendant toute la durée des Jeux.</p>
-                        <span class="pill">Milan · Urbain</span>
-                    </div>
- 
-                    <div class="tc nuit">
-                        <span class="tc-icon">🌙</span>
-                        <h3>Bus nocturne NM2</h3>
-                        <p>La ligne <strong>NM2</strong> remplace le métro M2 la nuit et est prolongée
-                           jusqu'à <strong>Assago Forum</strong> pendant les Jeux olympiques
-                           et paralympiques.</p>
-                        <span class="pill">Milan · Nuit</span>
-                    </div>
- 
-                    <div class="tc trolley">
-                        <span class="tc-icon">🚎</span>
-                        <h3>Trolleybus lignes 90 &amp; 91</h3>
-                        <p>Lignes circulaires dédiées à la <strong>mobilité olympique</strong> dans Milan.
-                           Elles relient les grandes stations de métro aux sites de compétition urbains
-                           avec une fréquence renforcée.</p>
-                        <span class="pill">Milan · Circulaire</span>
-                    </div>
- 
-                    <div class="tc train">
-                        <span class="tc-icon">🚄</span>
-                        <h3>Trenitalia – Frecciarossa</h3>
-                        <p>TGV depuis <strong>Rome, Florence, Bologne, Naples</strong> vers Milan ou Venise.
-                           Correspondances <strong>FrecciaLink</strong> (bus) directes vers Cortina,
-                           Predazzo et Tesero. Ticket combiné disponible sur trenitalia.com.</p>
-                        <span class="pill">National · Longue distance</span>
-                    </div>
- 
-                    <div class="tc cortina">
-                        <span class="tc-icon">🏔️</span>
-                        <h3>Train + navette → Cortina</h3>
-                        <p>Cortina n'a pas de gare. Depuis <strong>Venise / Belluno</strong> : train
-                           jusqu'à <strong>Calalzo di Cadore</strong> + navette (~&thinsp;50 min).
-                           Cortina Express &amp; ATVO depuis les aéroports VCE et MXP.</p>
-                        <span class="pill">Cortina · Montagne</span>
-                    </div>
- 
-                    <div class="tc park">
-                        <span class="tc-icon">🅿️</span>
-                        <h3>Park &amp; Ride / Train &amp; Ride</h3>
-                        <p>Stationnement direct sur les sites de montagne <strong>interdit</strong>.
-                           Deux systèmes : <strong>Park &amp; Ride</strong> (parking relais + navette)
-                           et <strong>Train &amp; Ride</strong> (gare relais + navette olympique).</p>
-                        <span class="pill">Tous sites montagne</span>
-                    </div>
- 
-                </div>
- 
-                <!-- Tarifs -->
-                <div class="sub-header">
-                    <h3>💶&nbsp; Tarifs ATM Milan</h3>
-                </div>
- 
-                <div class="tariff-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Titre de transport</th>
-                                <th>Tarif</th>
-                                <th>Validité</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Ticket 90 minutes</td>
-                                <td><strong>2,20 €</strong></td>
-                                <td>90 min après validation</td>
-                            </tr>
-                            <tr>
-                                <td>Journée illimitée</td>
-                                <td><strong>7,60 €</strong></td>
-                                <td>Jusqu'à fin de service</td>
-                            </tr>
-                            <tr>
-                                <td>3 jours illimités</td>
-                                <td><strong>15,50 €</strong></td>
-                                <td>72 h après 1ère validation</td>
-                            </tr>
-                            <tr>
-                                <td>Zone Assago (Mi1‑Mi3)</td>
-                                <td><strong>Supplément zone</strong></td>
-                                <td>Trajets vers Assago Forum</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
- 
-                <blockquote>
-                    💳&nbsp; Le paiement <strong>sans contact</strong> (carte, smartphone, montre connectée)
-                    est accepté sur tous les valideurs ATM. L'assistant vocal <strong>«&thinsp;Oly&thinsp;»</strong>
-                    de Trenord est disponible 24h/24 en 20+ langues au <strong>+39&nbsp;02&nbsp;8992&nbsp;0450</strong>.
-                </blockquote>
- 
+            <!-- Main -->
+            <div class="supinfo-banner">
+                <h2>Infos Pratiques</h2>
+                <p>Transports &bull; Sites de compétition &bull; Cartes interactives</p>
             </div>
-        </div>
-        <!--iframes avec cartes des differents sites des epreuves-->
-        <div class="wrapper style2">
-            <div class="inner">
- 
-                <header class="major">
-                    <h2>Sites de compétition &amp; Cartes</h2>
-                    <p>Localisation des trois sites concernés</p>
-                </header>
- 
-                <!-- Patinage artistique -->
-                <div class="venue">
-                    <div class="venue-head">
-                        <span class="sport-emoji">🩰</span>
-                        <div>
-                            <h3><a  href="patinage.html">Patinage artistique</a></h3>
-                            <span class="venue-sub">Milano Ice Skating Arena (Unipol Forum) &mdash; Assago, Milan</span>
+            <div class="wrapper style3">
+                <div class="inner">
+    
+                    <header class="major">
+                        <h2>Transports en commun</h2>
+                        <p>Comment rejoindre les sites olympiques sans voiture</p>
+                    </header>
+    
+                    <div class="transport-grid">
+    
+                        <div class="tc metro">
+                            <span class="tc-icon">🚇</span>
+                            <h3>Métro ATM – Milan</h3>
+                            <p>La <strong>ligne M2 (verte)</strong> relie directement le centre de Milan
+                            à la station <strong>Assago Forum</strong>. Horaires étendus jusqu'à
+                            <strong>2h du matin</strong> pendant toute la durée des Jeux.</p>
+                            <span class="pill">Milan · Urbain</span>
                         </div>
+    
+                        <div class="tc nuit">
+                            <span class="tc-icon">🌙</span>
+                            <h3>Bus nocturne NM2</h3>
+                            <p>La ligne <strong>NM2</strong> remplace le métro M2 la nuit et est prolongée
+                            jusqu'à <strong>Assago Forum</strong> pendant les Jeux olympiques
+                            et paralympiques.</p>
+                            <span class="pill">Milan · Nuit</span>
+                        </div>
+    
+                        <div class="tc trolley">
+                            <span class="tc-icon">🚎</span>
+                            <h3>Trolleybus lignes 90 &amp; 91</h3>
+                            <p>Lignes circulaires dédiées à la <strong>mobilité olympique</strong> dans Milan.
+                            Elles relient les grandes stations de métro aux sites de compétition urbains
+                            avec une fréquence renforcée.</p>
+                            <span class="pill">Milan · Circulaire</span>
+                        </div>
+    
+                        <div class="tc train">
+                            <span class="tc-icon">🚄</span>
+                            <h3>Trenitalia – Frecciarossa</h3>
+                            <p>TGV depuis <strong>Rome, Florence, Bologne, Naples</strong> vers Milan ou Venise.
+                            Correspondances <strong>FrecciaLink</strong> (bus) directes vers Cortina,
+                            Predazzo et Tesero. Ticket combiné disponible sur trenitalia.com.</p>
+                            <span class="pill">National · Longue distance</span>
+                        </div>
+    
+                        <div class="tc cortina">
+                            <span class="tc-icon">🏔️</span>
+                            <h3>Train + navette → Cortina</h3>
+                            <p>Cortina n'a pas de gare. Depuis <strong>Venise / Belluno</strong> : train
+                            jusqu'à <strong>Calalzo di Cadore</strong> + navette (~&thinsp;50 min).
+                            Cortina Express &amp; ATVO depuis les aéroports VCE et MXP.</p>
+                            <span class="pill">Cortina · Montagne</span>
+                        </div>
+    
+                        <div class="tc park">
+                            <span class="tc-icon">🅿️</span>
+                            <h3>Park &amp; Ride / Train &amp; Ride</h3>
+                            <p>Stationnement direct sur les sites de montagne <strong>interdit</strong>.
+                            Deux systèmes : <strong>Park &amp; Ride</strong> (parking relais + navette)
+                            et <strong>Train &amp; Ride</strong> (gare relais + navette olympique).</p>
+                            <span class="pill">Tous sites montagne</span>
+                        </div>
+    
                     </div>
-                    <div class="venue-body">
-                        <div class="venue-info">
-                            <span class="lbl">Adresse</span>
-                            <p>Via Giuseppe di Vittorio 6, 20057 Assago (MI)<br>Tél. +39 02 4885 7220</p>
- 
-                            <span class="lbl">Capacité</span>
-                            <p>9 700 spectateurs en configuration olympique</p>
- 
-                            <span class="lbl">Accès transports</span>
-                            <p>
-                                🚇 Métro <strong>M2</strong> → station <strong>Assago Forum</strong><br>
-                                🌙 Bus nocturne <strong>NM2</strong> (prolongé pendant les Jeux)<br>
-                                🚌 Navette PMR depuis sortie Uffici-Hotel<br>
-                                🅿️ Parking relais + navette
-                            </p>
-                            <div class="venue-tags">
-                                <span class="pill">🩰 Patinage artistique</span>
-                            </div>
-                        </div>
-                        <div class="venue-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.4793557581283!2d9.139245076627205!3d45.39967243774138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c3472fe96f97%3A0xe908310818de5732!2sVia%20Giuseppe%20di%20Vittorio%2C%206%2C%2020057%20Assago%20MI%2C%20Italy!5e0!3m2!1sen!2sbe!4v1774434881668!5m2!1sen!2sbe" 
-                                width="600" height="450" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
+    
+                    <!-- Tarifs -->
+                    <div class="sub-header">
+                        <h3>💶&nbsp; Tarifs ATM Milan</h3>
                     </div>
+    
+                    <div class="tariff-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Titre de transport</th>
+                                    <th>Tarif</th>
+                                    <th>Validité</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ticket 90 minutes</td>
+                                    <td><strong>2,20 €</strong></td>
+                                    <td>90 min après validation</td>
+                                </tr>
+                                <tr>
+                                    <td>Journée illimitée</td>
+                                    <td><strong>7,60 €</strong></td>
+                                    <td>Jusqu'à fin de service</td>
+                                </tr>
+                                <tr>
+                                    <td>3 jours illimités</td>
+                                    <td><strong>15,50 €</strong></td>
+                                    <td>72 h après 1ère validation</td>
+                                </tr>
+                                <tr>
+                                    <td>Zone Assago (Mi1‑Mi3)</td>
+                                    <td><strong>Supplément zone</strong></td>
+                                    <td>Trajets vers Assago Forum</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <blockquote>
+                        💳&nbsp; Le paiement <strong>sans contact</strong> (carte, smartphone, montre connectée)
+                        est accepté sur tous les valideurs ATM. L'assistant vocal <strong>«&thinsp;Oly&thinsp;»</strong>
+                        de Trenord est disponible 24h/24 en 20+ langues au <strong>+39&nbsp;02&nbsp;8992&nbsp;0450</strong>.
+                    </blockquote>
+    
                 </div>
- 
-                <!-- Luge / Skeleton / Bobsleigh -->
-                <div class="venue">
-                    <div class="venue-head">
-                        <span class="sport-emoji">🛷</span>
-                        <div>
-                            <h3>Luge &bull; Skeleton &bull; Bobsleigh</h3>
-                            <span class="venue-sub">Cortina Sliding Centre (Eugenio Monti) &mdash; Cortina d'Ampezzo</span>
-                        </div>
-                    </div>
-                    <div class="venue-body">
-                        <div class="venue-info">
-                            <span class="lbl">Adresse</span>
-                            <p>Località Ronco, 32043 Cortina d'Ampezzo (BL)</p>
- 
-                            <span class="lbl">La piste</span>
-                            <p>1 749 m — vitesses jusqu'à <strong>140 km/h</strong><br>
-                               Temps de course : 55 à 60 secondes.<br>
-                               Reconstruite sur le site historique des JO de 1956.</p>
- 
-                            <span class="lbl">Accès transports</span>
-                            <p>
-                                🚄 Frecciarossa → <strong>Venise Mestre</strong> + FrecciaLink → Cortina<br>
-                                🚂 Train → <strong>Calalzo di Cadore</strong> + navette (~&thinsp;50 min)<br>
-                                🚌 Cortina Express / ATVO depuis VCE &amp; MXP<br>
-                                🅿️ <strong>Park &amp; Ride obligatoire</strong>
-                            </p>
-                            <div class="venue-tags">
-                                <span class="pill">🛷 Luge</span>
-                                <span class="pill">💀 Skeleton</span>
-                                <span class="pill">🛷 Bobsleigh</span>
-                            </div>
-                        </div>
-                        <div class="venue-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.619296163252!2d12.124465976676085!3d46.54588526062037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477835001593d07f%3A0xdc43d373c7eac9a2!2sCortina%20Sliding%20Centre!5e1!3m2!1sen!2sbe!4v1774434989055!5m2!1sen!2sbe" 
-                                width="600" height="450" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
- 
-                <!-- Ski nordique -->
-                <div class="venue">
-                    <div class="venue-head">
-                        <span class="sport-emoji">⛷️</span>
-                        <div>
-                            <h3>Ski nordique</h3>
-                            <span class="venue-sub">Lago di Tesero Cross-Country Ski Centre &mdash; Val di Fiemme (TN)</span>
-                        </div>
-                    </div>
-                    <div class="venue-body">
-                        <div class="venue-info">
-                            <span class="lbl">Adresse</span>
-                            <p>Via Stazione 4, 38038 Tesero (TN)<br>Tél. +39 0462 814064</p>
- 
-                            <span class="lbl">Disciplines</span>
-                            <p>Ski de fond &amp; combiné nordique (fond).<br>
-                               Tremplins <strong>Giuseppe-Dal-Ben</strong> à Predazzo (~&thinsp;5 km)
-                               pour le saut à ski.</p>
- 
-                            <span class="lbl">Accès transports</span>
-                            <p>
-                                🚄 Frecciarossa → <strong>Ora/Auer</strong> + FrecciaLink → Predazzo/Tesero<br>
-                                🚌 Bus régional depuis Trento ou Bolzano<br>
-                                🅿️ Parking relais + navette olympique
-                            </p>
-                            <div class="venue-tags">
-                                <span class="pill">⛷️ Ski de fond</span>
-                                <span class="pill">🎿 Combiné nordique</span>
-                                <span class="pill">🏔️ Val di Fiemme</span>
-                            </div>
-                        </div>
-                        <div class="venue-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.5149293207087!2d11.52010587666477!3d46.2825255784677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778632d162feb45%3A0xd9a76c3578f739ff!2sLake%20Tesero%20Cross-Country%20Ski%20Centre!5e1!3m2!1sen!2sbe!4v1774435058583!5m2!1sen!2sbe" 
-                                width="600" height="450" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
- 
             </div>
-        </div>
+            <!--iframes avec cartes des differents sites des epreuves-->
+            <div class="wrapper style2">
+                <div class="inner">
+    
+                    <header class="major">
+                        <h2>Sites de compétition &amp; Cartes</h2>
+                        <p>Localisation des trois sites concernés</p>
+                    </header>
+    
+                    <!-- Patinage artistique -->
+                    <div class="venue">
+                        <div class="venue-head">
+                            <span class="sport-emoji">🩰</span>
+                            <div>
+                                <h3><a  href="patinage.html">Patinage artistique</a></h3>
+                                <span class="venue-sub">Milano Ice Skating Arena (Unipol Forum) &mdash; Assago, Milan</span>
+                            </div>
+                        </div>
+                        <div class="venue-body">
+                            <div class="venue-info">
+                                <span class="lbl">Adresse</span>
+                                <p>Via Giuseppe di Vittorio 6, 20057 Assago (MI)<br>Tél. +39 02 4885 7220</p>
+    
+                                <span class="lbl">Capacité</span>
+                                <p>9 700 spectateurs en configuration olympique</p>
+    
+                                <span class="lbl">Accès transports</span>
+                                <p>
+                                    🚇 Métro <strong>M2</strong> → station <strong>Assago Forum</strong><br>
+                                    🌙 Bus nocturne <strong>NM2</strong> (prolongé pendant les Jeux)<br>
+                                    🚌 Navette PMR depuis sortie Uffici-Hotel<br>
+                                    🅿️ Parking relais + navette
+                                </p>
+                                <div class="venue-tags">
+                                    <span class="pill">🩰 Patinage artistique</span>
+                                </div>
+                            </div>
+                            <div class="venue-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.4793557581283!2d9.139245076627205!3d45.39967243774138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c3472fe96f97%3A0xe908310818de5732!2sVia%20Giuseppe%20di%20Vittorio%2C%206%2C%2020057%20Assago%20MI%2C%20Italy!5e0!3m2!1sen!2sbe!4v1774434881668!5m2!1sen!2sbe" 
+                                    width="600" height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Luge / Skeleton / Bobsleigh -->
+                    <div class="venue">
+                        <div class="venue-head">
+                            <span class="sport-emoji">🛷</span>
+                            <div>
+                                <h3>Luge &bull; Skeleton &bull; Bobsleigh</h3>
+                                <span class="venue-sub">Cortina Sliding Centre (Eugenio Monti) &mdash; Cortina d'Ampezzo</span>
+                            </div>
+                        </div>
+                        <div class="venue-body">
+                            <div class="venue-info">
+                                <span class="lbl">Adresse</span>
+                                <p>Località Ronco, 32043 Cortina d'Ampezzo (BL)</p>
+    
+                                <span class="lbl">La piste</span>
+                                <p>1 749 m — vitesses jusqu'à <strong>140 km/h</strong><br>
+                                Temps de course : 55 à 60 secondes.<br>
+                                Reconstruite sur le site historique des JO de 1956.</p>
+    
+                                <span class="lbl">Accès transports</span>
+                                <p>
+                                    🚄 Frecciarossa → <strong>Venise Mestre</strong> + FrecciaLink → Cortina<br>
+                                    🚂 Train → <strong>Calalzo di Cadore</strong> + navette (~&thinsp;50 min)<br>
+                                    🚌 Cortina Express / ATVO depuis VCE &amp; MXP<br>
+                                    🅿️ <strong>Park &amp; Ride obligatoire</strong>
+                                </p>
+                                <div class="venue-tags">
+                                    <span class="pill">🛷 Luge</span>
+                                    <span class="pill">💀 Skeleton</span>
+                                    <span class="pill">🛷 Bobsleigh</span>
+                                </div>
+                            </div>
+                            <div class="venue-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.619296163252!2d12.124465976676085!3d46.54588526062037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477835001593d07f%3A0xdc43d373c7eac9a2!2sCortina%20Sliding%20Centre!5e1!3m2!1sen!2sbe!4v1774434989055!5m2!1sen!2sbe" 
+                                    width="600" height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Ski nordique -->
+                    <div class="venue">
+                        <div class="venue-head">
+                            <span class="sport-emoji">⛷️</span>
+                            <div>
+                                <h3>Ski nordique</h3>
+                                <span class="venue-sub">Lago di Tesero Cross-Country Ski Centre &mdash; Val di Fiemme (TN)</span>
+                            </div>
+                        </div>
+                        <div class="venue-body">
+                            <div class="venue-info">
+                                <span class="lbl">Adresse</span>
+                                <p>Via Stazione 4, 38038 Tesero (TN)<br>Tél. +39 0462 814064</p>
+    
+                                <span class="lbl">Disciplines</span>
+                                <p>Ski de fond &amp; combiné nordique (fond).<br>
+                                Tremplins <strong>Giuseppe-Dal-Ben</strong> à Predazzo (~&thinsp;5 km)
+                                pour le saut à ski.</p>
+    
+                                <span class="lbl">Accès transports</span>
+                                <p>
+                                    🚄 Frecciarossa → <strong>Ora/Auer</strong> + FrecciaLink → Predazzo/Tesero<br>
+                                    🚌 Bus régional depuis Trento ou Bolzano<br>
+                                    🅿️ Parking relais + navette olympique
+                                </p>
+                                <div class="venue-tags">
+                                    <span class="pill">⛷️ Ski de fond</span>
+                                    <span class="pill">🎿 Combiné nordique</span>
+                                    <span class="pill">🏔️ Val di Fiemme</span>
+                                </div>
+                            </div>
+                            <div class="venue-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.5149293207087!2d11.52010587666477!3d46.2825255784677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778632d162feb45%3A0xd9a76c3578f739ff!2sLake%20Tesero%20Cross-Country%20Ski%20Centre!5e1!3m2!1sen!2sbe!4v1774435058583!5m2!1sen!2sbe" 
+                                    width="600" height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/OlimpiadiMilanoCortina2026" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/milanocortina2026/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/KonstanVNKS/competition" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; 2026 Milano Cortina</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
-+
-    </div>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/OlimpiadiMilanoCortina2026" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/milanocortina2026/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/KonstanVNKS/competition" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2026 Milano Cortina</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+
+        </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -379,6 +388,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
 
     </body>
 </html>
