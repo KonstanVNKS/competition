@@ -4575,7 +4575,7 @@ body.accueilpage #cta .actions .button {
    ======================================== */
 
 /* Header — image de fond */
-body.patinage #page-wrapper section#main > header {
+body.patinage #page-wrapper #main > header {
 	padding: 12em 0 10em 0;
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/patinage-banner.jpg");
 	background-attachment: fixed;
@@ -4586,20 +4586,20 @@ body.patinage #page-wrapper section#main > header {
 	color: #fff;
 }
 
-body.patinage section#main > header h2 {
+body.patinage #main > header h2 {
 	font-size: 1.75em;
 	margin: 0 0 0.5em 0;
 	color: #fff;
 }
 
-body.patinage section#main > header p {
+body.patinage #main > header p {
 	color: rgba(255,255,255,0.8);
 	letter-spacing: 0.225em;
 	text-transform: uppercase;
 }
 
 @media screen and (max-width: 736px) {
-	body.patinage section#main > header {
+	body.patinage #main > header {
 		padding: 6em 2em 4em 2em;
 	}
 }
@@ -4692,7 +4692,7 @@ body.patinage .wrapper.style5 article h3 {
    ======================================== */
 
 /* Header */
-body.login section#main > header {
+body.login #main > header {
 	padding: 10em 0 8em 0;
 	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/login-index.jpg");
 	background-attachment: fixed;
@@ -4851,24 +4851,31 @@ body.accueilpage #cta {
     padding: 1em;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 5px;
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
 }
 
-.athlete h4 {
+.athlete p {
     margin-bottom: 0.5em;
+    align-self: center;
 }
 
 
 /* CSS pour les images d'athlètes emblématiques */
 .athlete-image {
     text-align: center;
-    margin-bottom: 1em;
+    flex-shrink: 0;
+    width: 200px;
+
 }
 
 .athlete-image img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
 }
 
 .athlete-image figcaption {
@@ -4877,10 +4884,20 @@ body.accueilpage #cta {
     margin-top: 0.5em;
 }
 
-.athlete {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+@media screen and (max-width: 736px) {
+    .athlete {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .athlete-image {
+        width: 150px;
+    }
+
+    .athlete-image img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 #nav-desktop .menu-horizontal > li > span {
