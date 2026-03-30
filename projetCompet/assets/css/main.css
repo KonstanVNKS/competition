@@ -4897,11 +4897,9 @@ body.accueilpage #cta {
 /* Fil d'ariane */
 nav[aria-label="fil-ariane"] {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 120px; /* ajuste selon ton logo */
     top: 0;
-    line-height: 3em;
-    height: 3em;
+    z-index: 1001;
 }
 
 nav[aria-label="fil-ariane"] ol {
