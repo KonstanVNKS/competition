@@ -20,8 +20,8 @@ const pages = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const input = document.getElementById(".search-input");
-    const results = document.getElementById(".search-results");
+    const input = document.querySelector(".search-input");
+    const results = document.querySelector(".search-results");
 
     if (!input || !results) return;
 

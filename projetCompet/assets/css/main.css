@@ -3447,26 +3447,13 @@ input, select, textarea {
         -ms-transition: background-color 0.2s ease;
         transition: background-color 0.2s ease;
         background: #439bf3;
-        height: 5em;
+        height: 3em;
         left: 0;
         line-height: 3em;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 10000;
-    }
-
-    /* Wrapper ligne 2 */
-    #header > h1,
-    #header > #nav-desktop,
-    #header > #nav {
-        height: 60px;
-        display: flex;
-        align-items: center;
-    }
-
-    #page-wrapper {
-        padding-top: 84px;
     }
 
         #header h1 {
@@ -3477,10 +3464,8 @@ input, select, textarea {
             height: inherit;
             left: 1.25em;
             line-height: inherit;
-            position: absolute;
+            position: static;
             top: 0;
-            margin: 0;
-            flex-shrink: 0;
         }
 
             #header h1 a {
@@ -3489,12 +3474,7 @@ input, select, textarea {
                 height: inherit;
                 line-height: inherit;
             }
-            
-            #header h1 a img {
-            width: 85px;
-            height: 46px;
-            padding-top: 0;
-        }
+
                 @media screen and (max-width: 736px) {
 
                     #header h1 a {
@@ -3502,8 +3482,6 @@ input, select, textarea {
                     }
 
                 }
-
-
 
         #header nav {
             height: inherit;
@@ -3555,7 +3533,6 @@ input, select, textarea {
 
                                 #header nav > ul > li > a.menuToggle {
                                     padding: 0 1.5em;
-
                                 }
 
                                     #header nav > ul > li > a.menuToggle span {
@@ -4268,7 +4245,12 @@ input, select, textarea {
     #header h1 span{
         display: none;
     }
-    
+    #header h1 a img {
+    width: 100%;
+    max-width: 85px;
+    height: auto;
+    padding-top:0.5em;
+    }
 
 
     /* =========================
@@ -4311,6 +4293,10 @@ input, select, textarea {
         background: var(--accent) !important;
     }
     
+    /* Header */
+    #header {
+        background: var(--bg-main) !important;
+    }
     
     /* Menu hamburger */
     #menu {
@@ -4396,13 +4382,15 @@ input, select, textarea {
     a:hover, .button:hover {
         transition: 0.3s;
     }
+    #header h1 a img{
+        width: 85px;
+        height: 46px;
+        padding-top: 15px;
+    }
 
-/* MENU DESKTOP */
+    /* MENU DESKTOP */
 #nav-desktop {
-    flex: 1;
     display: none;
-    align-items: center;
-    overflow: hidden;
 }
 
 .menu-horizontal {
@@ -4411,25 +4399,17 @@ input, select, textarea {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-wrap: nowrap;
 }
 
 .menu-horizontal li {
-    margin: 0;
+    margin: 0 1px;
     position: relative;
-    flex-shrink: 1;
 }
 
-.menu-horizontal a,
-#nav-desktop .menu-horizontal > li > span {
-    font-size: 0.65em !important;
-    padding: 0 0.5em;
-    letter-spacing: 0.08em !important;
-    white-space: nowrap;
-    color: white;
+.menu-horizontal a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    display: block;
 }
 
 /* DROPDOWN */
@@ -4442,7 +4422,6 @@ input, select, textarea {
     padding: 5px 0;
     display: none;
     min-width: 150px;
-    z-index: 9999;
 }
 
 .dropdown-menu li {
@@ -4453,127 +4432,56 @@ input, select, textarea {
     display: block;
 }
 
-
 /* RESPONSIVE */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
     #nav-desktop {
-        display: flex;
+        display: block;
     }
+
     #nav {
         display: none;
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 767px) {
     #nav-desktop {
         display: none;
     }
+
     #nav {
         display: block;
     }
 }
 
-/* HEADER FIXE - 2 lignes */
+/* HEADER FIXE */
 #header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: var(--bg-main) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 0 !important;
-    height: auto !important;
 }
 
-/* LIGNE 1 : fil d'ariane */
-nav[aria-label="fil-ariane"] {
-    position: relative;
-    left: auto;
-    transform: none;
-    top: auto;
-    width: 100% !important;
-    height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.25);
-}
-
-nav[aria-label="fil-ariane"] ol li {
-    font-size: 0.55em;
-    letter-spacing: 0.225em;
-    text-transform: uppercase;
-    color: #fff;
-    white-space: nowrap;
-}
-
-#header-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    padding: 0 1em;
-}
-
-/* LIGNE 2 : logo + recherche + menu */
-#header h1 {
-    margin: 0;
-    flex-shrink: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-#header > #header-row > #nav-desktop {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#header nav {
-    position: relative !important;
-    right: auto !important;
-    top: auto !important;
-}
-
-#header nav[aria-label="fil-ariane"] {
-    position: relative !important;
-}
-
-
-#header > #header-row > #nav {
-    display: flex;
-    align-items: center;
-}
-
-
-/* Espace sous le header */
+/* Évite que le contenu soit caché */
 #page-wrapper {
-    padding-top: 88px;
+    padding-top: 100px;
 }
-
-
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-.video-embed iframe {
+  }
+  .video-embed iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-}
+  }
 
 
 
-/*css page cerine test*/
+  /*css page cerine test*/
 /* ========================================
-PAGE ACCUEIL (body.accueilpage)
-======================================== */
+   PAGE ACCUEIL (body.accueilpage)
+   ======================================== */
 
 /* Spotlight — support de <figure class="image"> */
 body.accueilpage .spotlight figure.image {
@@ -4667,7 +4575,7 @@ body.accueilpage #cta .actions .button {
    ======================================== */
 
 /* Header — image de fond */
-body.patinage #page-wrapper #main > header {
+body.patinage #page-wrapper section#main > header {
 	padding: 12em 0 10em 0;
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/patinage-banner.jpg");
 	background-attachment: fixed;
@@ -4678,20 +4586,20 @@ body.patinage #page-wrapper #main > header {
 	color: #fff;
 }
 
-body.patinage #main > header h2 {
+body.patinage section#main > header h2 {
 	font-size: 1.75em;
 	margin: 0 0 0.5em 0;
 	color: #fff;
 }
 
-body.patinage #main > header p {
+body.patinage section#main > header p {
 	color: rgba(255,255,255,0.8);
 	letter-spacing: 0.225em;
 	text-transform: uppercase;
 }
 
 @media screen and (max-width: 736px) {
-	body.patinage #main > header {
+	body.patinage section#main > header {
 		padding: 6em 2em 4em 2em;
 	}
 }
@@ -4784,7 +4692,7 @@ body.patinage .wrapper.style5 article h3 {
    ======================================== */
 
 /* Header */
-body.login #main > header {
+body.login section#main > header {
 	padding: 10em 0 8em 0;
 	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/login-index.jpg");
 	background-attachment: fixed;
@@ -4943,31 +4851,24 @@ body.accueilpage #cta {
     padding: 1em;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 5px;
-    display: flex;
-    gap: 2em;
-    align-items: flex-start;
 }
 
-.athlete p {
+.athlete h4 {
     margin-bottom: 0.5em;
-    align-self: center;
 }
 
 
 /* CSS pour les images d'athlètes emblématiques */
 .athlete-image {
     text-align: center;
-    flex-shrink: 0;
-    width: 200px;
-
+    margin-bottom: 1em;
 }
 
 .athlete-image img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    display: block;
 }
 
 .athlete-image figcaption {
@@ -4976,23 +4877,12 @@ body.accueilpage #cta {
     margin-top: 0.5em;
 }
 
-@media screen and (max-width: 736px) {
-    .athlete {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .athlete-image {
-        width: 150px;
-    }
-
-    .athlete-image img {
-        width: 150px;
-        height: 150px;
-    }
+.athlete {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-<<<<<<< HEAD
 #nav-desktop .menu-horizontal > li > span {
     border: 0;
     color: #fff;
@@ -5005,15 +4895,23 @@ body.accueilpage #cta {
     font-weight:bold !important;
 }
 /* Fil d'ariane */
+#header-row {
+    display: flex;
+    align-items: center;
+    height: 3em;
+    width: 100%;
+    position: relative;
+}
+
 nav[aria-label="fil-ariane"] {
     position: absolute;
-    left: 120px; /* ajuste selon ton logo */
+    left: 7em;
     top: 0;
-    z-index: 1001;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    width: auto;
 }
-=======
-
->>>>>>> bac82c4248906b3190ab5ae1c14353a954f7f4be
 
 nav[aria-label="fil-ariane"] ol {
     list-style: none;
@@ -5025,15 +4923,15 @@ nav[aria-label="fil-ariane"] ol {
 }
 
 nav[aria-label="fil-ariane"] ol li {
-    font-size: 0.6em;
-    letter-spacing: 0.225em;
+    font-size: 0.65em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #fff;
     white-space: nowrap;
 }
 
 nav[aria-label="fil-ariane"] ol li + li::before {
-    content: ">";
+    content: "›";
     margin-right: 0.5em;
     opacity: 0.6;
 }
@@ -5046,14 +4944,6 @@ nav[aria-label="fil-ariane"] ol li a {
 
 nav[aria-label="fil-ariane"] ol li a:hover {
     opacity: 1;
-}
-
-
-/* Mobile */
-@media screen and (max-width: 736px) {
-    nav[aria-label="fil-ariane"] {
-        display: none;
-    }
 }
 
 /* barre de recherche*/
@@ -5072,7 +4962,7 @@ nav[aria-label="fil-ariane"] ol li a:hover {
     padding: 0 0.5em;
     height: 3em;
     outline: none;
-    width: 100px;
+    width: 150px;
 }
 
 .search-input::placeholder {
