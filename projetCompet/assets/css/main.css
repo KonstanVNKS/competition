@@ -5259,10 +5259,6 @@ body.accueilpage #banner a {
     color: white;
 }
 
-body.accueilpage #testimonials {
-    font-weight: bold;
-}
-
 body.is-mobile.accueilpage #banner,
 body.is-mobile.accueilpage .wrapper.style4 {
     background-image:
@@ -5499,4 +5495,3 @@ MENU HORIZONTAL - titres sous-menu
     color: var(--accent-light) !important;
 }
 
-/* INDEX */
