@@ -3412,7 +3412,6 @@ input, select, textarea {
             position: absolute;
             right: 0;
             top: 0;
-            vertical-align: middle;
             width: 7em;
         }
 
@@ -3585,6 +3584,16 @@ input, select, textarea {
                 opacity: 0;
             }
 
+@media screen and (min-width: 737px) {
+#nav-desktop { display: flex; }
+#nav { display: none; }
+}
+
+@media screen and (max-width: 736px) {
+#nav-desktop { display: none; }
+#nav { display: flex; align-items: center; margin-left: auto; }
+nav[aria-label="fil-ariane"] { display: none !important; }
+}
 /* Banner */
 
     #banner {
@@ -3750,6 +3759,8 @@ input, select, textarea {
 
         }
 
+
+
     body.is-preload #banner h2 {
         -moz-transform: scale(0.95);
         -webkit-transform: scale(0.95);
@@ -3906,6 +3917,22 @@ input, select, textarea {
         background-attachment: scroll;
     }
 
+    body.is-mobile #header {
+    position: fixed !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+}
+
+body.is-mobile #header-row {
+    display: flex !important;
+    width: 100% !important;
+    height: 60px !important;
+}
+
+body.is-mobile nav[aria-label="fil-ariane"] {
+    display: flex !important;
+}
 /* Footer */
 
     #footer {
@@ -4412,24 +4439,39 @@ input, select, textarea {
     margin: 0;
     padding: 0;
     flex-wrap: nowrap;
+    height: 60px;
+    align-items: center;
 }
 
 .menu-horizontal li {
     margin: 0;
     position: relative;
     flex-shrink: 1;
+    display: flex !important;
+    align-items: center !important;
+    height: 60px !important;
 }
 
 .menu-horizontal a,
 #nav-desktop .menu-horizontal > li > span {
     font-size: 0.65em !important;
-    padding: 0 0.5em;
+    padding: 0 0.5em !important;
     letter-spacing: 0.08em !important;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
+    white-space: nowrap !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 60px !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+}
+
+.menu-horizontal .search-item {
+    display: flex !important;
+    align-items: center !important;
+    height: 60px !important;
 }
 
 /* DROPDOWN */
@@ -4455,21 +4497,34 @@ input, select, textarea {
 
 
 /* RESPONSIVE */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 737px) {
     #nav-desktop {
-        display: flex;
+        display: flex !important;
     }
     #nav {
-        display: none;
+        display: none !important;
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 736px) {
     #nav-desktop {
-        display: none;
+        display: none !important;
     }
+
+
     #nav {
-        display: block;
+        display: flex !important;
+        align-items: center;
+        margin-left: auto;
+    }
+    nav[aria-label="fil-ariane"] {
+        display: none !important;
+    }
+    
+    .search-item {
+        display: flex !important;
+        align-items: center;
+        height: 60px;
     }
 }
 
@@ -4494,7 +4549,7 @@ nav[aria-label="fil-ariane"] {
     top: auto;
     width: 100% !important;
     height: 28px;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.25);
@@ -5038,6 +5093,7 @@ nav[aria-label="fil-ariane"] ol li a:hover {
 /* barre de recherche*/
 .search-item {
     position: relative;
+
 }
 
 
@@ -5049,9 +5105,11 @@ nav[aria-label="fil-ariane"] ol li a:hover {
     font-size: 0.8em;
     letter-spacing: 0.225em;
     padding: 0 0.5em;
-    height: 3em;
+    height: 2em;
+    line-height: 2em;
     outline: none;
     width: 100px;
+    vertical-align: middle;
 }
 
 .search-input::placeholder {
@@ -5082,4 +5140,84 @@ nav[aria-label="fil-ariane"] ol li a:hover {
 
 .search-results li a:hover {
     background: rgba(255,255,255,0.1);
+}
+
+
+/* ================================
+MENU HORIZONTAL - titres sous-menu
+   ================================ */
+
+/* "Sports" et "Mon compte" — même style que les liens */
+#nav-desktop .menu-horizontal > li.dropdown > .submenu-name {
+    font-size: 0.65em !important;
+    padding: 0 0.5em;
+    letter-spacing: 0.08em !important;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 60px;
+}
+
+/* MENU HAMBURGER */
+#menu ul > li {
+    border-top: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+#menu ul > li:first-child {
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Liens directs : Programme, Billets, Infos... */
+#menu ul > li > a {
+    font-size: 0.8em !important;
+    letter-spacing: 0.225em !important;
+    text-transform: uppercase !important;
+    color: var(--text-main) !important;
+    padding: 0.75em 0 !important;
+    display: block !important;
+}
+
+/* Titres Sports et Mon compte */
+#menu ul > li.submenu > span.submenu {
+    font-size: 0.8em !important;
+    letter-spacing: 0.225em !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    padding: 0.75em 0 !important;
+    display: block !important;
+}
+
+/* Sous-items */
+#menu ul > li.submenu > ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#menu ul > li.submenu > ul > li {
+    border-top: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#menu ul > li.submenu > ul > li > a {
+    font-size: 0.75em !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    color: var(--text-main) !important;
+    opacity: 0.85;
+    padding: 0.6em 0 0.6em 1em !important;
+    display: block !important;
+}
+
+#menu ul > li.submenu > ul > li > a:hover {
+    opacity: 1 !important;
+    color: var(--accent-light) !important;
 }
