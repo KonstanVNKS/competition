@@ -1,271 +1,405 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <!--
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="fr">
-	<head>
-		<title>JO HIVER 2026</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Bienvenue sur la page des JO d'Hiver 2026">
-		<meta name="author" content="Cerine Kefsi">
-    	<link rel="icon" type="image/png" href="images/olympic-games.png"> 
-		<link rel="stylesheet" href="assets/css/main.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-	</head>
-	<body class="accueilpage is-preload">
+  <head>
+    <title>JO HIVER 2026</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Bienvenue sur la page des JO d'Hiver 2026"
+    >
+    <meta name="author" content="Cerine Kefsi">
+    <link rel="icon" type="image/png" href="images/olympic-games.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
+  </head>
 
-		<!-- Page Wrapper -->
-		<div id="page-wrapper">
+  <body class="accueilpage is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <nav aria-label="fil-ariane">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li>A propos</li>
+          </ol>
+        </nav>
+        <div id="header-row">
+          <h1>
+            <a href="index.html">
+              <span>JO 2026</span>
+              <img src="images/olympic-rings-white-md.png" alt="logo JO">
+            </a>
+          </h1>
+          <nav id="nav-desktop">
+            <ul class="menu-horizontal">
+              <li class="search-item">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Rechercher..."
+                >
+                <ul class="search-results"></ul>
+              </li>
+              <li class="dropdown">
+                <span class="submenu-name">Sports</span>
+                <ul class="dropdown-menu">
+                  <li><a href="skeleton.html">Skeleton</a></li>
+                  <li><a href="patinage.html">Patinage artistique</a></li>
+                  <li><a href="luge.html">Luge</a></li>
+                  <li><a href="bobsleigh.html">Bobsleigh</a></li>
+                  <li><a href="skinordique.html">Ski nordique</a></li>
+                  <li><a href="athletes.html">Athletes emblematiques</a></li>
+                </ul>
+              </li>
+              <li><a href="programme.html">Programme</a></li>
+              <li><a href="billetterie.html">Tickets</a></li>
+              <li class="dropdown">
+                <span class="submenu-name">Mon compte</span>
+                <ul class="dropdown-menu">
+                  <li><a href="login.html">Se connecter</a></li>
+                  <li><a href="page-utilisateur.html">Mon profil</a></li>
+                  <li><a href="panier.html">Panier</a></li>
+                  <li><a href="historique-commandes.html">Commandes</a></li>
+                </ul>
+              </li>
+              <li><a href="supInfo.html">Infos</a></li>
+              <li><a href="a_propos.html">A propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="legalmention.html">Mentions légales</a></li>
+            </ul>
+          </nav>
+          <!--Menu Hamburger Mobile-->
+          <nav id="nav">
+            <ul>
+              <li class="special">
+                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                <div id="menu">
+                  <ul>
+                    <li class="search-item">
+                      <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Rechercher..."
+                      >
+                      <ul class="search-results"></ul>
+                    </li>
+                    <li class="submenu">
+                      <span class="submenu">Sports</span>
+                      <ul>
+                        <li><a href="skeleton.html">Skeleton</a></li>
+                        <li><a href="patinage.html">Patinage artistique</a></li>
+                        <li><a href="luge.html">Luge</a></li>
+                        <li><a href="bobsleigh.html">Bobsleigh</a></li>
+                        <li><a href="skinordique.html">Ski nordique</a></li>
+                        <li>
+                          <a href="athletes.html">Athletes emblematiques</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="billetterie.html">Billets</a></li>
+                    <li class="submenu">
+                      <span class="submenu">Mon compte</span>
+                      <ul>
+                        <li><a href="login.html">Se connecter</a></li>
+                        <li><a href="page-utilisateur.html">Mon profil</a></li>
+                        <li>
+                          <a href="historique-commandes.html">Commandes</a>
+                        </li>
+                        <li><a href="panier.html">Panier</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="supInfo.html">Infos</a></li>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="legalmention.html">Mentions légales</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-			<!-- Header -->
-			<header id="header">
-				<nav aria-label="fil-ariane">
-					<ol>
-						<li><a href="index.html">Accueil</a></li>
-						<li>A propos</li>
-					</ol>
-				</nav>
-				<div id="header-row">
-					<h1>
-						<a href="index.html">
-							<span>JO 2026</span>
-							<img src="images/olympic-rings-white-md.png" alt="logo JO">
-						</a>
-					</h1>
-					<nav id="nav-desktop">	
-						<ul class="menu-horizontal">
-							<li class="search-item">
-								<input type="text" class="search-input" placeholder="Rechercher..." />
-								<ul class="search-results"></ul>
-							</li>
-							<li class="dropdown">
-								<span class="submenu-name">Sports</span>
-								<ul class="dropdown-menu">
-										<li><a href="skeleton.html">Skeleton</a></li>
-										<li><a href="patinage.html">Patinage artistique</a></li>
-										<li><a href="luge.html">Luge</a></li>
-										<li><a href="bobsleigh.html">Bobsleigh</a></li>
-										<li><a href="skinordique.html">Ski nordique</a></li>
-										<li><a href="athletes.html">Athletes emblematiques</a></li> 
-								</ul>
-							</li>
-							<li><a href="programme.html">Programme</a></li>
-							<li><a href="billetterie.html">Tickets</a></li>
-							<li class="dropdown">
-								<span class="submenu-name">Mon compte</span>
-								<ul class="dropdown-menu">
-									<li><a href="login.html">Se connecter</a></li>
-									<li><a href="page-utilisateur.html">Mon profil</a></li>
-									<li><a href="panier.html">Panier</a></li>
-									<li><a href="historique-commandes.html">Commandes</a></li>
-								</ul>
-							</li>
-							<li><a href="supInfo.html">Infos</a></li>
-							<li><a href="a_propos.html">A propos</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="legalmention.html">Mentions légales</a></li>
-						</ul>
-					</nav>
-					<!--Menu Hamburger Mobile-->
-					<nav id="nav">
-						<ul>
-							<li class="special">
-								<a href="#menu" class="menuToggle"><span>Menu</span></a>
-								<div id="menu">
-																	<ul>
-										<li class="search-item">
-											<input type="text" class="search-input" placeholder="Rechercher..." />
-											<ul class="search-results"></ul>
-										</li>
-																			<li class="submenu">
-																					<span class="submenu">Sports</span>
-																					<ul>
-																							<li><a href="skeleton.html">Skeleton</a></li>
-																							<li><a href="patinage.html">Patinage artistique</a></li>
-																							<li><a href="luge.html">Luge</a></li>
-																							<li><a href="bobsleigh.html">Bobsleigh</a></li>
-																							<li><a href="skinordique.html">Ski nordique</a></li>
-												<li><a href="athletes.html">Athletes emblematiques</a></li> 
-																					</ul>
-																			</li>
+      <!-- Main -->
+      <main>
+        <!-- Banner -->
+        <section id="banner">
+          <div class="inner">
+            <h2>Milano Cortina 2026</h2>
+            <p>Jeux Olympiques d'Hiver</p>
+            <p>
+              <time datetime="2026-02-06">6 février</time>
+              -
+              <time datetime="2026-02-26">22 février 2026</time>
+            </p>
+            <p>Vivez la magie des Jeux au coeur des Alpes italiennes</p>
+            <ul class="actions special">
+              <li>
+                <a href="billeterie.html" class="button"
+                  >Réserver mes billets</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="#one" class="more scrolly">En savoir plus</a>
+        </section>
 
-																			<li><a href="programme.html">Programme</a></li>
-																			<li><a href="billetterie.html">Billets</a></li>
-										<li class="submenu">
-											<span class="submenu">Mon compte</span>
-											<ul>
-												<li><a href="login.html">Se connecter</a></li>
-												<li><a href="page-utilisateur.html">Mon profil</a></li>
-												<li><a href="historique-commandes.html">Commandes</a></li>
-												<li><a href="panier.html">Panier</a></li>
-											</ul>
-										</li>
-																			<li><a href="supInfo.html">Infos</a></li>
-																			<li><a href="a_propos.html">A propos</a></li>
-																			<li><a href="contact.html">Contact</a></li>
-																			<li><a href="legalmention.html">Mentions légales</a></li>
-									
-																	</ul>
-								</div>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+        <!-- One -->
+        <section id="one" class="wrapper style6 special">
+          <div class="inner">
+            <header class="major">
+              <h2>Découvrez l’univers : Milano Cortina 2026</h2>
+              <p>
+                Pour la première fois de son histoire, l'Italie accueille les
+                Jeux Olympiques d'Hiver. Du
+                <time datetime="2026-02-06">6 février</time> au
+                <time datetime="2026-02-22">22 février 2026</time>,
+                <span>Milan et Cortina d'Ampezzo, Italie</span> ouvrent leurs
+                portes au monde entier pour une édition exceptionnelle au cœur
+                des Dolomites.
+              </p>
+              <ul class="key numbers">
+                <li>🌍90 pays participants</li>
+                <li>🏅116 épreuves au programme</li>
+                <li>🏔️7 sites de compétition</li>
+              </ul>
+              <h3>Sports au programme sur ce site</h3>
+              <ul class="sports site">
+                <li><a href="#two-one">🛷Luge</a></li>
+                <li><a href="#two-two">⛸️Patinage artistique</a></li>
+                <li><a href="#two-three">💀Skeleton</a></li>
+                <li><a href="bobsleigh.html">❄️Bobsleigh</a></li>
+                <li><a href="skinordique.html">⛷️Ski nordique</a></li>
+              </ul>
+            </header>
+            <ul class="icons major">
+              <li>
+                <span class="icon fa-snowflake major style1"
+                  ><span class="label">Flocon</span></span
+                >
+              </li>
+              <li>
+                <span class="icon solid fa-trophy major style3"
+                  ><span class="label">Trophé</span></span
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
 
-			<!-- Main -->
-			<main>
-			
-				<!-- Banner -->
-				<section id="banner">
-					<div class="inner">
-						<h2>Milano Cortina 2026</h2>
-						<p>Jeux Olympiques d'Hiver</p>
-						<p>
-							<time datetime="2026-02-06">6 février</time>
-							- 
-							<time datetime="2026-02-26">22 février 2026</time>
-						</p>
-						<p>Vivez la magie des Jeux au coeur des Alpes italiennes</p>
-						<ul class="actions special">
-							<li><a href="billeterie.html" class="button">Réserver mes billets</a></li>
-						</ul>
-					</div>
-					<a href="#one" class="more scrolly">En savoir plus</a>
-				</section>
+        <!-- Two -->
+        <section id="two" class="wrapper alt style">
+          <h2>Sports emblématiques</h2>
+          <section id="two-one" class="spotlight">
+            <figure class="image">
+              <img
+                src="images/luge_index.jpg"
+                alt="Equipe sur une luge, JO 2018"
+              >
+              <figcaption>
+                Equipe de la République Tchèque, JO de PyeonChang 2018
+              </figcaption>
+            </figure>
+            <div class="content">
+              <h3><a href="luge.html">Luge</a></h3>
+              <p>
+                Discipline phare des Jeux Olympiques d'Hiver depuis 1964, la
+                luge met en scène des athlètes allongés sur le dos sur un petit
+                traîneau, atteignant des vitesses vertigineuses de plus de 140
+                km/h sur des pistes de glace sinueuses. Les compétitions se
+                déroulent en individuel hommes, individuel dames, double et par
+                équipes. Chaque dixième de seconde compte, les écarts entre les
+                athlètes sont souvent infimes, ce qui rend cette discipline
+                l'une des plus intenses et spectaculaires des Jeux.
+              </p>
+            </div>
+          </section>
+          <section id="two-two" class="spotlight">
+            <figure class="image">
+              <img
+                src="images/patinage_index.jpg"
+                alt="Tessa Virtue et Scott Moir aux JO de 2018"
+              >
+              <figcaption>
+                Tessa Virtue et Scott Moir, médaillés d'or, JO de PyeongChang
+                2018
+              </figcaption>
+            </figure>
+            <div class="content">
+              <h3><a href="patinage.html">Patinage artistique</a></h3>
+              <p>
+                Sport emblématique des Jeux Olympiques d'Hiver depuis 1908, le
+                patinage artistique allie technique, grâce et expression
+                artistique sur glace. Les athlètes s'affrontent dans quatre
+                catégories : simple dames, simple messieurs, couples et danse
+                sur glace. Entre sauts périlleux, pirouettes et programmes
+                chorégraphiés sur musique, le patinage artistique est l'une des
+                disciplines les plus suivies et les plus appréciées du grand
+                public aux Jeux Olympiques d'Hiver.
+              </p>
+            </div>
+          </section>
+          <section id="two-three" class="spotlight">
+            <figure class="image">
+              <img
+                src="images/skeleton_index.jpeg"
+                alt="Athlète faisant du skeleton"
+              >
+              <figcaption>
+                Yan Wengang faisant du skeleton, JO de PyeongChang 2018
+              </figcaption>
+            </figure>
+            <div class="content">
+              <h3><a href="skeleton.html">Skeleton</a></h3>
+              <p>
+                Discipline extrême et spectaculaire, le skeleton voit les
+                athlètes dévaler une piste de glace à plus de 130 km/h... la
+                tête la première ! Allongés sur le ventre sur un petit traîneau,
+                ils contrôlent leur trajectoire avec une précision millimétrée
+                en utilisant uniquement les mouvements de leur corps. Présent
+                aux Jeux Olympiques d'Hiver depuis 2002, le skeleton est sans
+                doute la discipline la plus impressionnante et la plus
+                audacieuse de toutes les épreuves de glisse.
+              </p>
+            </div>
+          </section>
+        </section>
 
-				<!-- One -->
-				<section id="one" class="wrapper style6 special">
-					<div class="inner">
-						<header class="major">
-							<h2>Découvrez l’univers : Milano Cortina 2026</h2>
-							<p>Pour la première fois de son histoire, l'Italie accueille les Jeux Olympiques d'Hiver. Du <time datetime="2026-02-06">6 février</time> au <time datetime="2026-02-22">22 février 2026</time>, <span>Milan et Cortina d'Ampezzo, Italie</span> ouvrent leurs portes au monde entier pour une édition exceptionnelle au cœur des Dolomites.</p>
-							<ul class="key numbers">
-								<li>🌍90 pays participants</li>
-								<li>🏅116 épreuves au programme</li>
-								<li>🏔️7 sites de compétition</li>
-							</ul>
-							<h3>Sports au programme sur ce site</h3>
-							<ul class="sports site">
-								<li><a href="#two-one">🛷Luge</a></li>
-								<li><a href="#two-two">⛸️Patinage artistique</a></li>
-								<li><a href="#two-three">💀Skeleton</a></li>
-								<li><a href="bobsleigh.html">❄️Bobsleigh</a></li>
-								<li><a href="skinordique.html">⛷️Ski nordique</a></li>
-							</ul>
-						</header>
-						<ul class="icons major">
-							<li><span class="icon fa-snowflake major style1"><span class="label">Flocon</span></span></li>
-							<li><span class="icon solid fa-trophy major style3"><span class="label">Trophé</span></span></li>
-						</ul>
-					</div>
-				</section>
+        <!--Témoignages-->
+        <section id="testimonials" class="wrapper style6 special">
+          <div class="inner">
+            <header class="major">
+              <h2>Ils y étaient</h2>
+              <p>Des spectateurs du monde entier témoignent</p>
+            </header>
+            <blockquote>
+              <p>"Une expérience inoubliable, l'ambiance était incroyable !"</p>
+              <footer>— Marie D., spectatrice JO 2022</footer>
+            </blockquote>
+            <blockquote>
+              <p>"Les Jeux d'hiver, c'est magique. On y retourne en 2026 !"</p>
+              <footer>— Thomas B., fan de luge</footer>
+            </blockquote>
+            <div style="margin-top: 2em">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/7wdwqYcMoaQ?si=_UFzDaMVGqEDRDi6"
+                title="Milano Cortina 2026 Teaser"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
 
-				<!-- Two -->
-				<section id="two" class="wrapper alt style">
-					<h2>Sports emblématiques</h2>
-					<section id="two-one" class="spotlight">
-						<figure class="image">
-							<img src="images/luge_index.jpg" alt="Equipe sur une luge, JO 2018">
-							<figcaption>Equipe de la République Tchèque, JO de PyeonChang 2018</figcaption>
-						</figure>
-						<div class="content">
-							<h3><a href="luge.html">Luge</a></h3>
-							<p>Discipline phare des Jeux Olympiques d'Hiver depuis 1964, la luge met en scène des athlètes allongés sur le dos sur un petit traîneau, atteignant des vitesses vertigineuses de plus de 140 km/h sur des pistes de glace sinueuses. Les compétitions se déroulent en individuel hommes, individuel dames, double et par équipes. Chaque dixième de seconde compte, les écarts entre les athlètes sont souvent infimes, ce qui rend cette discipline l'une des plus intenses et spectaculaires des Jeux.</p>
-						</div>
-					</section>
-					<section id="two-two" class="spotlight">
-						<figure class="image">
-							<img src="images/patinage_index.jpg" alt="Tessa Virtue et Scott Moir aux JO de 2018">
-							<figcaption>Tessa Virtue et Scott Moir, médaillés d'or, JO de PyeongChang 2018</figcaption>
-						</figure>
-						<div class="content">
-							<h3><a href="patinage.html">Patinage artistique</a></h3>
-							<p>Sport emblématique des Jeux Olympiques d'Hiver depuis 1908, le patinage artistique allie technique, grâce et expression artistique sur glace. Les athlètes s'affrontent dans quatre catégories : simple dames, simple messieurs, couples et danse sur glace. Entre sauts périlleux, pirouettes et programmes chorégraphiés sur musique, le patinage artistique est l'une des disciplines les plus suivies et les plus appréciées du grand public aux Jeux Olympiques d'Hiver.</p>
-						</div>
-					</section>
-					<section id="two-three" class="spotlight">
-						<figure class="image">
-							<img src="images/skeleton_index.jpeg" alt="Athlète faisant du skeleton">
-							<figcaption>Yan Wengang faisant du skeleton, JO de PyeongChang 2018</figcaption>
-						</figure>
-						<div class="content">
-							<h3><a href="skeleton.html">Skeleton</a></h3>
-							<p>Discipline extrême et spectaculaire, le skeleton voit les athlètes dévaler une piste de glace à plus de 130 km/h... la tête la première ! Allongés sur le ventre sur un petit traîneau, ils contrôlent leur trajectoire avec une précision millimétrée en utilisant uniquement les mouvements de leur corps. Présent aux Jeux Olympiques d'Hiver depuis 2002, le skeleton est sans doute la discipline la plus impressionnante et la plus audacieuse de toutes les épreuves de glisse.</p>
-						</div>
-					</section>
-				</section>
+        <!--CTA-->
+        <section id="cta" class="wrapper style4">
+          <div class="inner">
+            <header>
+              <h2>Prêt à vivre l'expérience Milano Cortina 2026 ?</h2>
+              <p>
+                Les meilleures places partent vite. Choisissez vos épreuves
+                parmi nos 5 sports au programme et réservez vos billets dès
+                maintenant pour ne rien manquer des Jeux Olympiques d'Hiver.
+              </p>
+              <ul class="arguments">
+                <li>✅ Paiement sécurisé</li>
+                <li>✅ Billets disponibles pour toutes les épreuves</li>
+                <li>✅ Livraison immédiate par email</li>
+              </ul>
+            </header>
+            <ul class="actions stacked">
+              <li>
+                <a href="programme.html" class="button fit"
+                  >Voir le programme</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Document/programme-jo2026.pdf"
+                  class="button fit"
+                  download
+                  title="Télécharger le programme des JO 2026 en PDF"
+                  >📄Télécharger le programme PDF</a
+                >
+              </li>
+              <li>
+                <a href="billeterie.html" class="button fit"
+                  >Réserver mes billets</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
-				<!--Témoignages-->
-				<section id="testimonials" class="wrapper style6 special">
-					<div class="inner">
-						<header class="major">
-							<h2>Ils y étaient</h2>
-							<p>Des spectateurs du monde entier témoignent</p>
-						</header>
-						<blockquote>
-							<p>"Une expérience inoubliable, l'ambiance était incroyable !"</p>
-							<footer>— Marie D., spectatrice JO 2022</footer>
-						</blockquote>
-						<blockquote>
-							<p>"Les Jeux d'hiver, c'est magique. On y retourne en 2026 !"</p>
-							<footer>— Thomas B., fan de luge</footer>
-						</blockquote>
-						<div style="margin-top: 2em;">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/7wdwqYcMoaQ?si=_UFzDaMVGqEDRDi6" title="Milano Cortina 2026 Teaser" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						</div>
-					</div>
-				</section>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.tiktok.com/@milanocortina2026"
+              class="icon brands fa-tiktok"
+              ><span class="label">TikTok</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/OlimpiadiMilanoCortina2026"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/milanocortina2026/"
+              class="icon brands fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/KonstanVNKS/competition"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; 2026 Milano Cortina</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
 
-				<!--CTA-->
-				<section id="cta" class="wrapper style4">
-					<div class="inner">
-						<header>
-							<h2>Prêt à vivre l'expérience Milano Cortina 2026 ?</h2>
-							<p>Les meilleures places partent vite. Choisissez vos épreuves parmi nos 5 sports au programme et réservez vos billets dès maintenant pour ne rien manquer des Jeux Olympiques d'Hiver.</p>
-							<ul class="arguments">
-								<li>✅ Paiement sécurisé</li>
-								<li>✅ Billets disponibles pour toutes les épreuves</li>
-								<li>✅ Livraison immédiate par email</li>
-							</ul>
-						</header>
-						<ul class="actions stacked">
-							<li><a href="programme.html" class="button fit">Voir le programme</a></li>
-							<li><a href="Document/programme-jo2026.pdf" class="button fit" download title="Télécharger le programme des JO 2026 en PDF">📄Télécharger le programme PDF</a></li>
-							<li><a href="billeterie.html" class="button fit">Réserver mes billets</a></li>
-						</ul>
-					</div>
-				</section>
-			
-			</main>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-						<li><a href="https://www.tiktok.com/@milanocortina2026" class="icon brands fa-tiktok"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/OlimpiadiMilanoCortina2026" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/milanocortina2026/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/KonstanVNKS/competition" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				</ul>
-				<ul class="copyright">
-						<li>&copy; 2026 Milano Cortina</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/search.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
+  </body>
 </html>
