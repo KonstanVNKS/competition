@@ -4093,7 +4093,7 @@ body.is-mobile nav[aria-label="fil-ariane"] {
     /*Poour la bannier des pages de David*/
     /* Banner spécifique Bobsleigh */
     body.bobsleigh-page #main > header {
-        background-image: url("../../images/canada-bobsleigh.jpg");
+        background-image: url("../../images/bobsleigh-1.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -4303,22 +4303,21 @@ body.is-mobile nav[aria-label="fil-ariane"] {
    ========================= */
 
     :root {
-        --bg-main: #1C2A39;
-        --bg-secondary: #2E4A62;
-        --bg-light: #E5EAF0;
-    
-        --text-main: #5396e7;
-        --text-dark: #1C2A39;
-    
-        --accent: #0062ff;
-        --accent-light: #38BDF8;
-    
-        --border: rgba(255,255,255,0.15);
+    --bg-main:var(--bg-secondary);
+    --bg-secondary:var(--text-dark);
+    --bg-light: #F0F4F8;
 
-        --button: #00aeff;
-        --button-light : #aae4ff; 
-    }
-    
+    --text-main: #0a0b0c;
+    --text-dark: #495e9c;
+
+    --accent: #00B4D8;
+    --accent-light: #90E0EF;
+
+    --border: rgba(255,255,255,0.15);
+
+    --button: #00b4d8;
+    --button-light: #bae4eb;
+}
     /* Fond global */
     body {
         background: var(--bg-main) !important;
@@ -4338,19 +4337,37 @@ body.is-mobile nav[aria-label="fil-ariane"] {
         background: var(--accent) !important;
     }
     
-    
-    /* Menu hamburger */
     #menu {
-        background: var(--bg-main) !important;
+    background: #1A1F2E !important;
     }
+
+    #header {
+        background: #4e65ab !important;
+    }
+
+    nav[aria-label="fil-ariane"] {
+        background: rgba(0,0,0,0.3) !important;
+    }
+        
     
     /* Texte */
-    p, h1,h3, h4, h5, h6 {
+
+    #menu p {
+        color:#00f0ff;
+    }
+
+    p {
         color: var(--text-main);
     }
-    h2 {
+
+    h1, h2 {
         color: var(--bg-light)
     }
+
+    h3, h4, h5, h6 {
+        color:#00b4d8
+    }
+
     header {
         color: var(--bg-light)
     }
@@ -4411,12 +4428,13 @@ body.is-mobile nav[aria-label="fil-ariane"] {
     
     /* Menu texte */
     #menu ul > li > a {
-        color: var(--text-main);
+        color:#00f0ff !important;
     }
     
     /* Sous-menu */
     #menu .submenu ul li a {
         opacity: 0.85;
+        color: #00f0ff;
     }
     
     /* Hover global plus lisible */
@@ -4450,6 +4468,7 @@ body.is-mobile nav[aria-label="fil-ariane"] {
     display: flex !important;
     align-items: center !important;
     height: 60px !important;
+    overflow: visible !important;
 }
 
 .menu-horizontal a,
@@ -4477,22 +4496,23 @@ body.is-mobile nav[aria-label="fil-ariane"] {
 /* DROPDOWN */
 .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 60px !important;
     left: 0;
     background: var(--bg-main);
-    list-style: none;
+    list-style: none !important;
     padding: 5px 0;
     display: none;
     min-width: 150px;
-    z-index: 9999;
+    z-index: 99999 !important;
+    white-space: nowrap;
 }
 
 .dropdown-menu li {
-    padding: 5px 10px;
+    padding: 1px 5px;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block !important;
 }
 
 
@@ -4588,6 +4608,16 @@ nav[aria-label="fil-ariane"] ol li {
     justify-content: center;
 }
 
+#header-row,
+#nav-desktop,
+.menu-horizontal {
+    overflow: visible !important;
+}
+
+#header {
+    overflow: visible !important;
+}
+
 #header nav {
     position: relative !important;
     right: auto !important;
@@ -4631,6 +4661,15 @@ PAGE ACCUEIL (body.accueilpage)
 ======================================== */
 
 /* Spotlight — support de <figure class="image"> */
+
+body.accueilpage .spotlight p {
+    color: white;
+}
+
+body.accueilpage .spotlight h3 {
+    color: #00f0ff;
+}
+
 body.accueilpage .spotlight figure.image {
 	-moz-order: 1;
 	-webkit-order: 1;
@@ -4649,8 +4688,10 @@ body.accueilpage .spotlight figure.image img {
 }
 
 body.accueilpage .spotlight figure.image figcaption {
-	font-size: 0.75em;
-	color: rgba(255,255,255,0.5);
+	font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+	color: rgba(255, 255, 255, 0.769);
 	padding: 0.5em 1em;
 	text-align: center;
 }
@@ -4724,7 +4765,7 @@ body.accueilpage #cta .actions .button {
 /* Header — image de fond */
 body.patinage #page-wrapper #main > header {
 	padding: 12em 0 10em 0;
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/patinage-banner.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/patinage-banner.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4973,9 +5014,13 @@ body.login .wrapper.style5 .inner section h3 {
 /* Photo de fond banner — accueil uniquement */
 body.accueilpage #banner {
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/index-banner.jpg");
-		background-position: center center;
+	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body.accueilpage #banner p {
+    color: white;
 }
 
 body.is-mobile.accueilpage #banner,
@@ -5090,11 +5135,6 @@ nav[aria-label="fil-ariane"] ol li a:hover {
     }
 }
 
-/* barre de recherche*/
-.search-item {
-    position: relative;
-
-}
 
 
 .search-input {
@@ -5178,7 +5218,8 @@ MENU HORIZONTAL - titres sous-menu
     font-size: 0.8em !important;
     letter-spacing: 0.225em !important;
     text-transform: uppercase !important;
-    color: var(--text-main) !important;
+    font-weight: bold;
+    color: #48ceff !important;
     padding: 0.75em 0 !important;
     display: block !important;
 }
@@ -5186,10 +5227,11 @@ MENU HORIZONTAL - titres sous-menu
 /* Titres Sports et Mon compte */
 #menu ul > li.submenu > span.submenu {
     font-size: 0.8em !important;
+    font-family: inherit !important;
     letter-spacing: 0.225em !important;
     text-transform: uppercase !important;
-    color: #fff !important;
-    font-weight: bold !important;
+    color:#48ceff !important;
+    font-weight: bold;
     padding: 0.75em 0 !important;
     display: block !important;
 }
@@ -5202,7 +5244,7 @@ MENU HORIZONTAL - titres sous-menu
 
 #menu ul > li.submenu > ul > li {
     border-top: none !important;
-    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+    border-bottom: 1px solid #368489 !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -5211,7 +5253,8 @@ MENU HORIZONTAL - titres sous-menu
     font-size: 0.75em !important;
     letter-spacing: 0.15em !important;
     text-transform: uppercase !important;
-    color: var(--text-main) !important;
+    color: #00f0ff !important;
+    font-weight: normal;
     opacity: 0.85;
     padding: 0.6em 0 0.6em 1em !important;
     display: block !important;
@@ -5221,3 +5264,7 @@ MENU HORIZONTAL - titres sous-menu
     opacity: 1 !important;
     color: var(--accent-light) !important;
 }
+
+
+/* INDEX */
+
