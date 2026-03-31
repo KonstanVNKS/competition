@@ -3998,7 +3998,7 @@ input, select, textarea {
     body.is-mobile.landing #footer {
         background-color: #1d242a;
     }
-    /* partie css rejoutée par moi pour mes parties */
+    /* partie css rejoutée par moi pour nos pages et partie qui 'overide' le css de base du template */
 
     .back-link {
       display: inline-block;
