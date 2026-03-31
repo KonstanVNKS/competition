@@ -4998,3 +4998,22 @@ nav[aria-label="fil-ariane"] ol li a:hover {
 .hide{
     display: none;
 }
+#imagebobsleigh {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#imagebobsleigh img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #imagebobsleigh {
+        flex-direction: column;
+        align-items: center;
+    }
+}
