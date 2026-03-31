@@ -4994,3 +4994,7 @@ nav[aria-label="fil-ariane"] ol li a:hover {
 .search-results li a:hover {
     background: rgba(255,255,255,0.1);
 }
+
+h3.hide{
+    display: none;
+}
