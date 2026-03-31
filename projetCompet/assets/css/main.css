@@ -4995,6 +4995,6 @@ nav[aria-label="fil-ariane"] ol li a:hover {
     background: rgba(255,255,255,0.1);
 }
 
-h3.hide{
+.hide{
     display: none;
 }
